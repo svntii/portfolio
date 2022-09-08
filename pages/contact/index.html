@@ -46,9 +46,29 @@
   <div class="eks-three"></div>
 </div>
 
-<h1 class="logo">About Me</h1>
-
 <div class="text">
+
+  <div class="container-form">
+    <form>
+        <fieldset>
+            <label for="first-name">Enter Your First Name: <input id="first-name" name="first-name" type="text" required /> </label>
+            <label for="last-name">Enter Your last Name: <input id="last-name" name="last-name" type="text" required /></label>
+            <label for="email">Enter Your Email: <input id="email" name="email" type="email" required /></label>
+        </fieldset>
+     
+        <fieldset>
+
+          <label for="subject">Subject</label>
+          <textarea id="subject" name="subject" placeholder="Write something.." ></textarea>
+
+          <label for="bio">Provide a bio:
+            <textarea id="bio" name="bio" rows="3" cols="30" placeholder="I like coding on the beach..."></textarea>
+          </label>
+
+        </fieldset>
+        <input type="submit" value="Submit">
+    </form>
+  </div>
 <!-- partial -->
   <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.0/gsap.min.js'></script><script  src="./script.js"></script>
 
