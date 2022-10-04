@@ -75,3 +75,16 @@ a {
     font-size: 25px;
     font-weight: 500;
 }
+
+.timeline {
+    padding-bottom: 40px;
+}
+
+.work-text {
+    font-size: 20px;
+}
+
+.work-title {
+    font-size: 30px;
+    font-weight: bold;
+}

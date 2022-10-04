@@ -5,6 +5,21 @@ var words = [
     "Bronx Made",
 ];
 
+/*Alerting User Email has been Sent*/
+
+function MessageSent() {
+    user = document.getElementById("specificSizeInputName").value;
+    username = document.getElementById("specificSizeInputGroupUsername").value;
+    subject_line = document.getElementById("specificSizeInputSubject").value;
+    email =
+        username + "@" + document.getElementById("specificSizeSelect").value;
+    message = document.getElementById("contact-message").value;
+
+    alert(`Hello ${user}! Your message has been sent to me. Please wait up to 24hrs for response time.\n
+    For more immediate response, please reach out to me on other platforms. Thank you.
+    \n\nRegards,\n\tSantiago\n\tsjrodriguez@gmail.com`);
+}
+
 /*
 Adopted from https://codepen.io/rasifederico/pen/XWEamJX
 */
