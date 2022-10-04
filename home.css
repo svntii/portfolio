@@ -1,0 +1,77 @@
+html,
+.nav,
+.tab-content {
+    font-family: "Montserrat", sans-serif;
+    background-color: lavender;
+}
+.home-about {
+    padding: 20px;
+}
+.home-headshot {
+    height: 35vh;
+    border-radius: 50%;
+}
+
+.home-about-name {
+    margin-top: 10px;
+}
+.home-bio-text {
+    margin-top: 30px;
+    text-align: justify;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+a {
+    color: darkmagenta;
+}
+.contact-form {
+    padding: 20px;
+}
+
+@keyframes blink-caret {
+    from,
+    to {
+        border-color: transparent;
+    }
+    50% {
+        border-color: rgb(68, 68, 68);
+    }
+}
+.home-i-am-tags-parent {
+    white-space: nowrap;
+    text-align: center;
+    vertical-align: middle;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.message {
+    display: inline-block;
+    animation: blink-caret 0.75s step-end infinite;
+}
+
+.projects,
+.nav-contact {
+    padding-top: 5%;
+}
+.projects-heading {
+    padding-bottom: 40px;
+}
+.accordion-body {
+    text-align: left;
+    font-size: 20px;
+}
+
+.accordion-button {
+    font-size: larger;
+}
+
+.home-about-social {
+    font-size: 40px;
+}
+.nav-link {
+    font-size: 25px;
+    font-weight: 500;
+}
