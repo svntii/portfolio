@@ -38,6 +38,19 @@
             </button>
             <button
                 class="nav-link"
+                id="nav-Community-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#nav-Community"
+                type="button"
+                role="tab"
+                aria-controls="nav-Community"
+                aria-selected="false"
+            >
+                Community Involvement
+                <i class="bi bi-pc-display-horizontal"></i>
+            </button>
+            <button
+                class="nav-link"
                 id="nav-work-tab"
                 data-bs-toggle="tab"
                 data-bs-target="#nav-work"
@@ -126,11 +139,21 @@
                             would love to connect and share ideas.
                             <br />
                             <br />
-                            Chat with me:
-                            <a href="https://calendly.com/sjrodriguez-iii"
-                                >https://calendly.com/sjrodriguez-iii/
-                            </a>
+                            <!-- Calendly inline widget begin -->
                         </p>
+
+                        <div
+                            class="calendly-inline-widget"
+                            data-url="https://calendly.com/sjrodriguez-iii/chat-w-me"
+                            style="min-width: 320px; height: 630px"
+                        ></div>
+                        <script
+                            type="text/javascript"
+                            src="https://assets.calendly.com/assets/external/widget.js"
+                            async
+                        ></script>
+                        <!-- Calendly inline widget end -->
+                        <br />
                     </div>
                 </div>
                 <div class="home-about-social container text-center">
@@ -143,6 +166,176 @@
                     <a href="https://www.instagram.com/svntiiago"
                         ><i class="bi bi-instagram"></i
                     ></a>
+                </div>
+            </div>
+            <div
+                class="tab-pane fade"
+                id="nav-Community"
+                role="tabpanel"
+                aria-labelledby="nav-Community-tab"
+                tabindex="0"
+            >
+                <div
+                    class="accordion accordion-flush container text-center projects"
+                    id="projectsAccordion"
+                >
+                    <h1 class="projects-heading">Community Involvement</h1>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingOne">
+                            <button
+                                class="accordion-button collapsed"
+                                type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseOne"
+                                aria-expanded="false"
+                                aria-controls="flush-collapseOne"
+                            >
+                                ColorStack
+                            </button>
+                        </h2>
+                        <div
+                            id="flush-collapseOne"
+                            class="accordion-collapse collapse"
+                            aria-labelledby="flush-headingOne"
+                            data-bs-parent="#projectsAccordion"
+                        >
+                            <div class="accordion-body">
+                                <ul>
+                                    <li>
+                                        A national Black and Latinx tech
+                                        community that provides learning
+                                        resources, mentorship, and networking
+                                        opportunities.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingTwo">
+                            <button
+                                class="accordion-button collapsed"
+                                type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseTwo"
+                                aria-expanded="false"
+                                aria-controls="flush-collapseTwo"
+                            >
+                                Society of Hispanic Professional Engineers
+                                (SHPE)
+                            </button>
+                        </h2>
+                        <div
+                            id="flush-collapseTwo"
+                            class="accordion-collapse collapse"
+                            aria-labelledby="flush-headingTwo"
+                            data-bs-parent="#projectsAccordion"
+                        >
+                            <div class="accordion-body">
+                                <ul>
+                                    <li>
+                                        SHPE changes lives by empowering the
+                                        Hispanic community to realize its
+                                        fullest potential and to impact the
+                                        world through STEM awareness, access,
+                                        support, and development.
+                                    </li>
+                                    <li>
+                                        Attended National Conference where I
+                                        network with professionals and learned
+                                        how to leverage my skills to be a better
+                                        leader.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingThree">
+                            <button
+                                class="accordion-button collapsed"
+                                type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseThree"
+                                aria-expanded="false"
+                                aria-controls="flush-collapseThree"
+                            >
+                                Management Leadership for Tomorrow (MLT)
+                            </button>
+                        </h2>
+                        <div
+                            id="flush-collapseThree"
+                            class="accordion-collapse collapse"
+                            aria-labelledby="flush-headingThree"
+                            data-bs-parent="#projectsAccordion"
+                        >
+                            <div class="accordion-body">
+                                <ul>
+                                    <li>
+                                        MLT equips and emboldens high-achieving
+                                        individuals from underrepresented
+                                        communities—Black, Latinx, and Native
+                                        American—to realize their full
+                                        potential, to make a mark, and make a
+                                        difference
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingFour">
+                            <button
+                                class="accordion-button collapsed"
+                                type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseFour"
+                                aria-expanded="false"
+                                aria-controls="flush-collapseFour"
+                            >
+                                B-Minor Language + Compiler
+                            </button>
+                        </h2>
+                        <div
+                            id="flush-collapseFour"
+                            class="accordion-collapse collapse"
+                            aria-labelledby="flush-headingFour"
+                            data-bs-parent="#projectsAccordion"
+                        >
+                            <div class="accordion-body">
+                                <ul>
+                                    <li>
+                                        Constructed a working compiler that
+                                        transforms C into x86 assembly.
+                                    </li>
+                                    <li>
+                                        The project was broken down into five
+                                        steps, requiring the construction of a
+                                        scanner, parser, type checker, source
+                                        translator, and code generator.
+                                    </li>
+                                    <li>
+                                        From this project I was able to learn
+                                        topics ranging from the abstract theory
+                                        of automata to the very practical
+                                        details of assembly languages.
+                                    </li>
+                                    <li>
+                                        Repo linked
+                                        <a
+                                            href="https://github.com/svntii/srodri25-compiler"
+                                            >here</a
+                                        >
+                                        &emsp;|&emsp;Course Material
+                                        <a
+                                            href="https://dthain.github.io/compilers-fa22/"
+                                            >Here</a
+                                        >
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div
