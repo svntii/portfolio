@@ -14,9 +14,10 @@
 :root {
     /* Global variables */
     --color-bg: lavender;
-    --color-bg-variant: #f5f5f5;
+    --color-bg-variant: #cab9dc;
     --color-primary: darkmagenta;
-    --color-primary-variant: #0a58ca;
+    --color-primary-variant: #63a9ff;
+    --color-light-secondary: #f9fd00;
     --color-dark: rgb(6, 0, 37);
     --color-light: #f5f5f5;
 
@@ -59,11 +60,19 @@ h6 {
 }
 
 h1 {
-    font-size: 2.5rem;
+    font-size: 3.5rem;
 }
+
+h2 {
+    font-size: 2rem;
+}
+
+h5 {
+    font-size: 1.25rem;
+}
+
 section {
     margin-top: 8rem;
-    height: 100vh;
 }
 
 section > h2,

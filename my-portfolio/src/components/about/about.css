@@ -51,22 +51,24 @@
 
 .about__icon {
     color: var(--color-primary);
-    font-size: 1.4rem;
+    font-size: 1.7rem;
     margin-bottom: 1rem;
 }
 
-.about_card h5 {
-    font-size: 0.95rem;
+.about__card h5 {
+    font-size: 1.3rem;
 }
 
 .about__card small {
-    font-size: 0.8rem;
+    font-size: 1rem;
     color: var(--color-dark);
+    justify-content: space-evenly;
 }
 
 .about__content p {
     margin: 2.5rem 0 2.6rem;
     color: var(--color-dark);
+    font-size: 1.2rem;
 }
 
 @media screen and (max-width: 1024px) {

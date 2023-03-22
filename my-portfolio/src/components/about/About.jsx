@@ -1,7 +1,9 @@
 import React from 'react'
 import './about.css'
 import ME from '../../assets/MeYose.jpg'
-import {Gi3DGlasses} from 'react-icons/gi'
+import{BiCoffeeTogo} from 'react-icons/bi'
+import {FaToolbox,FaBrain} from 'react-icons/fa'
+
 
 const About = () => {
   return (
@@ -20,21 +22,21 @@ const About = () => {
         <div className="about__cards">
 
           <article className='about__card'>
-            <Gi3DGlasses className='about__icon'/>
-            <h5>Sample</h5>
-            <small>yes</small>
+            <BiCoffeeTogo className='about__icon'/>
+            <h5>Grit</h5>
+            <small>Willing to work through any problem</small>
           </article>
 
           <article className='about__card'>
-            <Gi3DGlasses className='about__icon'/>
-            <h5>Sample</h5>
-            <small>yes</small>
+            <FaBrain className='about__icon'/>
+            <h5>Many Hats</h5>
+            <small>I can work many hats and be the multi-tool your team needs</small>
           </article>
 
           <article className='about__card'>
-            <Gi3DGlasses className='about__icon'/>
-            <h5>Sample</h5>
-            <small>yes</small>
+            <FaToolbox className='about__icon'/>
+            <h5>Quick Learner</h5>
+            <small>Fail Fast, and Get Up Quicker. I can learn any tech stack and work with any technology.</small>
           </article>
         </div>
           
