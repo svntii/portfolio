@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/svntii.github.io/static/css/main.77b58ca5.css",
+    "main.js": "/svntii.github.io/static/js/main.265d30db.js",
+    "static/media/MeYose.jpg": "/svntii.github.io/static/media/MeYose.8a6684d7457618e2d63f.jpg",
+    "static/media/SJRODRIGUEZ.pdf": "/svntii.github.io/static/media/SJRODRIGUEZ.66b42b63bb0ec109f3e7.pdf",
+    "static/media/FaceShotSJ.jpg": "/svntii.github.io/static/media/FaceShotSJ.619773ac473db371c96a.jpg",
+    "index.html": "/svntii.github.io/index.html",
+    "main.77b58ca5.css.map": "/svntii.github.io/static/css/main.77b58ca5.css.map",
+    "main.265d30db.js.map": "/svntii.github.io/static/js/main.265d30db.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.77b58ca5.css",
+    "static/js/main.265d30db.js"
+  ]
+}
