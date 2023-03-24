@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/svntii.github.io/static/css/main.71b1f382.css",
-    "main.js": "/svntii.github.io/static/js/main.3841e184.js",
-    "static/media/MeYose.jpg": "/svntii.github.io/static/media/MeYose.8a6684d7457618e2d63f.jpg",
-    "static/media/SJRODRIGUEZ.pdf": "/svntii.github.io/static/media/SJRODRIGUEZ.66b42b63bb0ec109f3e7.pdf",
-    "static/media/FaceShotSJ.jpg": "/svntii.github.io/static/media/FaceShotSJ.619773ac473db371c96a.jpg",
-    "index.html": "/svntii.github.io/index.html",
-    "main.71b1f382.css.map": "/svntii.github.io/static/css/main.71b1f382.css.map",
-    "main.3841e184.js.map": "/svntii.github.io/static/js/main.3841e184.js.map"
+    "main.css": "/portfolio/static/css/main.71b1f382.css",
+    "main.js": "/portfolio/static/js/main.b214fdff.js",
+    "static/media/MeYose.jpg": "/portfolio/static/media/MeYose.8a6684d7457618e2d63f.jpg",
+    "static/media/SJRODRIGUEZ.pdf": "/portfolio/static/media/SJRODRIGUEZ.66b42b63bb0ec109f3e7.pdf",
+    "static/media/FaceShotSJ.jpg": "/portfolio/static/media/FaceShotSJ.619773ac473db371c96a.jpg",
+    "index.html": "/portfolio/index.html",
+    "main.71b1f382.css.map": "/portfolio/static/css/main.71b1f382.css.map",
+    "main.b214fdff.js.map": "/portfolio/static/js/main.b214fdff.js.map"
   },
   "entrypoints": [
     "static/css/main.71b1f382.css",
-    "static/js/main.3841e184.js"
+    "static/js/main.b214fdff.js"
   ]
 }
