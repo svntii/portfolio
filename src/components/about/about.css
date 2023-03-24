@@ -89,13 +89,14 @@
 
 @media screen and (max-width: 600px) {
     .about__cards {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr;
         gap: 1rem;
     }
 
     .about__me {
         width: 65%;
         margin: 0 auto 3rem;
+        margin-bottom: 1rem;
     }
 
     .about__content {
@@ -104,5 +105,9 @@
 
     .about__content p {
         margin: 1.5rem 0;
+    }
+
+    .bio__description {
+        text-align: left;
     }
 }

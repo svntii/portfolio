@@ -40,7 +40,7 @@ const About = () => {
           </article>
         </div>
           
-          <p> 
+          <p className='bio__description'> 
               I am born and raised in the Bronx, half Puerto Rican and Dominican and 1 of 7! 
               I am a junior studying Computer Science at the University of Notre Dame. 
               In addition to earning my degree in Computer Science, I am pursuing a minor in Innovation 
