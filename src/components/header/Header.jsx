@@ -4,7 +4,6 @@ import CTA from './CTA'
 import FACE from "../../assets/FaceShotSJ.jpg"
 import HeaderSocial from './HeaderSocial'
 
-
 const Header = () => {
   return (
     <header>
