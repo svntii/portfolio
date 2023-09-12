@@ -3,7 +3,6 @@ import './header.css'
 import CTA from './CTA'
 import FACE from "../../assets/FaceShotSJ.jpg"
 import HeaderSocial from './HeaderSocial'
-import Nav from '../nav/Nav'
 
 
 const Header = () => {

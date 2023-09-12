@@ -1,16 +1,18 @@
 {
   "files": {
-    "main.css": "/static/css/main.71b1f382.css",
-    "main.js": "/static/js/main.4cd49200.js",
+    "main.css": "/static/css/main.c48e13d4.css",
+    "main.js": "/static/js/main.ffc1ae39.js",
+    "static/media/MeAngelsLanding.jpeg": "/static/media/MeAngelsLanding.6d773bcba328f08fffbc.jpeg",
+    "static/media/MeYoseFalls.jpg": "/static/media/MeYoseFalls.dfce1f4f19f836514038.jpg",
     "static/media/MeYose.jpg": "/static/media/MeYose.8a6684d7457618e2d63f.jpg",
-    "static/media/SJRODRIGUEZ.pdf": "/static/media/SJRODRIGUEZ.66b42b63bb0ec109f3e7.pdf",
     "static/media/FaceShotSJ.jpg": "/static/media/FaceShotSJ.619773ac473db371c96a.jpg",
+    "static/media/SJRODRIGUEZ.pdf": "/static/media/SJRODRIGUEZ.bc4f49e02cb3ee702127.pdf",
     "index.html": "/index.html",
-    "main.71b1f382.css.map": "/static/css/main.71b1f382.css.map",
-    "main.4cd49200.js.map": "/static/js/main.4cd49200.js.map"
+    "main.c48e13d4.css.map": "/static/css/main.c48e13d4.css.map",
+    "main.ffc1ae39.js.map": "/static/js/main.ffc1ae39.js.map"
   },
   "entrypoints": [
-    "static/css/main.71b1f382.css",
-    "static/js/main.4cd49200.js"
+    "static/css/main.c48e13d4.css",
+    "static/js/main.ffc1ae39.js"
   ]
 }
