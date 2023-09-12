@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.c48e13d4.css",
-    "main.js": "/static/js/main.eb6ead64.js",
+    "main.js": "/static/js/main.ffc1ae39.js",
     "static/media/MeAngelsLanding.jpeg": "/static/media/MeAngelsLanding.6d773bcba328f08fffbc.jpeg",
     "static/media/MeYoseFalls.jpg": "/static/media/MeYoseFalls.dfce1f4f19f836514038.jpg",
     "static/media/MeYose.jpg": "/static/media/MeYose.8a6684d7457618e2d63f.jpg",
@@ -9,10 +9,10 @@
     "static/media/SJRODRIGUEZ.pdf": "/static/media/SJRODRIGUEZ.bc4f49e02cb3ee702127.pdf",
     "index.html": "/index.html",
     "main.c48e13d4.css.map": "/static/css/main.c48e13d4.css.map",
-    "main.eb6ead64.js.map": "/static/js/main.eb6ead64.js.map"
+    "main.ffc1ae39.js.map": "/static/js/main.ffc1ae39.js.map"
   },
   "entrypoints": [
     "static/css/main.c48e13d4.css",
-    "static/js/main.eb6ead64.js"
+    "static/js/main.ffc1ae39.js"
   ]
 }
