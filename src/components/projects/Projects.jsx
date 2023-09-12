@@ -39,6 +39,16 @@ const Projects = () => {
       ],
       technologies: ["Python", "Pandas", "Numpy", "ImapLib"],
       githublink: "https://github.com/svntii/Student-Advisor-Matching"
+    },
+    {
+      id:4,
+      name:"EyeTrack",
+      description:"Developed a model that is able to detect, track, and accurately determine where a subject is looking at via a camera feed. Then translate the data from the model to mouse movement, and incorporated gesture recognition - for clicking, gesturing, etc.",
+      bullets:[
+        "Our software is broken up into two components - Gaze Tracking and Gesture Detection"
+      ],
+      technologies: ["Python", "OpenCV", "Openface", "MediaPipe"],
+      githublink:"https://github.com/svntii/eyeTrack"
     }
   ];
   return (

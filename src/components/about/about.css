@@ -14,8 +14,9 @@
         var(--color-primary-variant),
         transparent
     );
-    display: grid;
-    place-items: center;
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
 }
 
 .about__me-image {
@@ -23,9 +24,17 @@
     overflow: hidden;
     transform: rotate(10deg);
     transition: var(--transition);
+    transform: rotate(0deg); /* Initial rotation set to 0 */
 }
+
 .about__me-image:hover {
-    transform: rotate(0deg);
+    transform: rotate(10deg); /* Rotate the image on hover */
+}
+
+.carousel-container {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
 }
 
 .about__cards {
@@ -62,7 +71,9 @@
 .about__card small {
     font-size: 1rem;
     color: var(--color-dark);
-    justify-content: space-evenly;
+    justify-content: center; /* Center text horizontally */
+    align-items: center; /* Center text vertically */
+    display: flex; /* Use flexbox to center text */
 }
 
 .about__content p {
