@@ -5,7 +5,27 @@ const Projects = () => {
 
   const projects = [
     {
-      id: 1,
+      id:1,
+      name:"EyeTrack",
+      description:"Developed a CV model that is able to detect, track, and accurately determine where a subject is looking at via a camera feed. Then translate the data from the model to mouse movement, and incorporated gesture recognition - for clicking, gesturing, etc.",
+      bullets:[
+        "Our software is broken up into two components - Gaze Tracking and Gesture Detection"
+      ],
+      technologies: ["Python", "OpenCV", "Openface", "MediaPipe"],
+      githublink:"https://github.com/svntii/eyeTrack"
+    },
+    {
+      id:2,
+      name:"Virtual Assistant",
+      description:"Developed a NLP model that is able to summarize, condense, and respond to notifactions sent to a device",
+      bullets:[
+        "In prorgess"
+      ],
+      technologies: [""],
+      githublink:"https://github.com/svntii/eyeTrack"
+    },
+    {
+      id: 3,
       name: 'B-Minor Compiler',
       description: 'A compiler for the B-Minor programming language',
       bullets: [
@@ -17,7 +37,7 @@ const Projects = () => {
       githublink: "https://github.com/svntii/srodri25-compiler"
     },
     {
-      id: 2,
+      id: 4,
       name: 'Lambda Calculus Interpreter',
       description: 'Created a Visualizer/Interpreter for a Lambda Calculus terms with their respective types',
       bullets: [
@@ -30,7 +50,7 @@ const Projects = () => {
       githublink: "https://github.com/ND-CSE-40431/pl-programming-svntii"
     },
     {
-      id: 3,
+      id: 5,
       name:"Happiest Matchmaking App",
       description:"Developed, implemented, and tested the Gale-Shapley Algorithm to create matching making application for professors to match advisors with students",
       bullets: [
@@ -39,16 +59,6 @@ const Projects = () => {
       ],
       technologies: ["Python", "Pandas", "Numpy", "ImapLib"],
       githublink: "https://github.com/svntii/Student-Advisor-Matching"
-    },
-    {
-      id:4,
-      name:"EyeTrack",
-      description:"Developed a model that is able to detect, track, and accurately determine where a subject is looking at via a camera feed. Then translate the data from the model to mouse movement, and incorporated gesture recognition - for clicking, gesturing, etc.",
-      bullets:[
-        "Our software is broken up into two components - Gaze Tracking and Gesture Detection"
-      ],
-      technologies: ["Python", "OpenCV", "Openface", "MediaPipe"],
-      githublink:"https://github.com/svntii/eyeTrack"
     }
   ];
   return (
