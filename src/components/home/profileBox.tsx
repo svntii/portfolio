@@ -1,34 +1,41 @@
-import * as React from 'react';
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import List from '@mui/material/List';
 import ListItem from '@mui/material/ListItem';
 
-interface ProfileBoxProps {
-  name: string;
-  title: string;
-  interests: string[];
-  socials: string[];
+interface ProfilePage {
+    name: string;
+    title: string;
+    description: string;
+    interests: string[];
+    socials: string[];
 }
 
-export function ProfileBox({ name, title, interests, socials }: ProfileBoxProps) {
-  return (
-    <div>
-      <Box sx={{maxWidth: 600, maxHeight: 400, bgcolor: 'background.paper', p:2 }}>
-        <Typography variant="h4" component="div" sx={{ color: 'text.primary' }}>
-          {name}
-        </Typography>
-        <Typography variant="body1" gutterBottom sx={{ color: 'text.primary', fontStyle:'italic' }}>
-          {title}
-        </Typography>
-      </Box>
-      {InterestsBox(interests)}
-      {SocialsBox(socials)}
-    </div>
-  );
+export function Profile({ name, title, description, interests, socials }: ProfilePage) {
+    return (
+        <div>
+            {BioBox({ name, title, description })}
+            {InterestsBox(interests)}
+            {SocialsBox(socials)}
+        </div>
+    );
 }
 
-
+function BioBox({ name, title, description }: { name: string, title: string, description: string }) {
+    return (
+        <Box sx={{ maxWidth: 600, maxHeight:90, bgcolor: 'background.paper', p: 2, mt: 2, overflow: 'hidden', '&:hover': { maxHeight: 600 } }}>
+            <Typography variant="h4" component="div" sx={{ color: 'text.primary', '&:hover': { backgroundColor: 'blueviolet', color: 'white' } }}>
+                {name}
+            </Typography>
+            <Typography variant="body1" gutterBottom sx={{ color: 'text.primary', fontStyle: 'italic', '&:hover': { backgroundColor: 'blueviolet', color: 'white' } }}>
+                {title}
+            </Typography>
+            <Typography variant="body2" sx={{ color: 'text.primary', '&:hover': { backgroundColor: 'blueviolet', color: 'white' } }}>
+                {description}
+            </Typography>
+        </Box>
+    );
+}
 
 function InterestsBox(interests: string[]) {
     return <Box sx={{ maxWidth: 600, maxHeight: 50, bgcolor: 'background.paper', p: 2, mt: 2, overflow: 'hidden', '&:hover': { maxHeight: 400 } }}>
@@ -38,7 +45,7 @@ function InterestsBox(interests: string[]) {
         <List>
             {interests.map((interest, index) => (
                 <ListItem key={index}>
-                    <Typography variant="body2" sx={{ color: 'text.primary' }}>
+                    <Typography variant="body2" sx={{ color: 'text.primary', '&:hover': { backgroundColor: 'blueviolet', color: 'white' } }}>
                         {interest}
                     </Typography>
                 </ListItem>
@@ -50,21 +57,21 @@ function InterestsBox(interests: string[]) {
 
 function SocialsBox(socials: string[]) {
     return (
-      <Box sx={{ maxWidth: 600, maxHeight: 50, bgcolor: 'background.paper', p: 2, mt: 2, overflow: 'hidden', '&:hover': { maxHeight: 400 } }}>
-        <Typography variant="body1" sx={{ color: 'text.primary' }}>
-          Socials 📱
-        </Typography>
-        <List>
-          {socials.map((social, index) => (
-            <ListItem key={index}>
-              <a href={"https://" + social} target="_blank" rel="noopener noreferrer">
-                <Typography variant="body2" sx={{ color: 'text.primary' }}>
-                  {social}
-                </Typography>
-              </a>
-            </ListItem>
-          ))}
-        </List>
-      </Box>
+        <Box sx={{ maxWidth: 600, maxHeight: 50, bgcolor: 'background.paper', p: 2, mt: 2, overflow: 'hidden', '&:hover': { maxHeight: 400 } }}>
+            <Typography variant="body1" sx={{ color: 'text.primary' }}>
+                Socials 📱
+            </Typography>
+            <List>
+                {socials.map((social, index) => (
+                    <ListItem key={index}>
+                        <a href={"https://" + social} target="_blank" rel="noopener noreferrer">
+                            <Typography variant="body2" sx={{ color: 'text.primary', '&:hover': { backgroundColor: 'blueviolet', color: 'white' } }}>
+                                {social}
+                            </Typography>
+                        </a>
+                    </ListItem>
+                ))}
+            </List>
+        </Box>
     );
-  }
+}
