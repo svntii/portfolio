@@ -71,10 +71,14 @@ Total credit hours: 20.500
 
 ### Fall Semester 2022
 
-- CSE 40113: Design/Analysis of Algorithms 
-- CSE 40175: Ethical & Professional Issues
-- CSE 40535: Computer Vision
-- CSE 40657: Natural Language Processing 
+- CSE 30151: Theory of Computing 
+- CSE 30321: Computer Architecture
+- CSE 30332: Programming Paradigms
+- CSE 40243: Compilers and Language Design
+- CSE 40431: Programming Languages
+- EG  35101: Industry and Community-Based Innovation Projects
+- MGTO 35310: Innovation and Design Thinking Immersion
+
 
 Total credit hours: 20.500
 
