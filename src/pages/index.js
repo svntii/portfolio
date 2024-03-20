@@ -7,8 +7,8 @@ import config from '../app/config.json';
 import CssBaseline from '@mui/material/CssBaseline';
 import { BottomNav } from '../components/bNav';
 import { getSortedPostsData } from '@/posts';
-
-
+import Head from 'next/head';
+import { homeBoxStyle } from '@/pages/styles';
 
 
 export async function getStaticProps() {
@@ -22,12 +22,15 @@ export async function getStaticProps() {
 
 
 export default function Home({ allPostsData }) {
-    const [value, setValue] = React.useState(0);
-
     return (
-        <React.Fragment>
+        <main>
+            <Head>
+                <title>{"Home"}</title>
+                <link rel="icon" href="/app/favicon.ico" sizes="any" />
+            </Head>
+
             <CssBaseline />
-            <Box sx={{ display: 'flex', flexDirection: 'column', height: '100vh', alignItems: 'center', justifyContent: 'center', background: 'green' }}>
+            <Box sx={{ ...homeBoxStyle }}>
                 <Profile
                     name={config.profile.name}
                     title={config.profile.title}
@@ -37,7 +40,6 @@ export default function Home({ allPostsData }) {
                 />
                 <BlogList allPostsData={allPostsData} />
             </Box>
-            <BottomNav/>
-        </React.Fragment>
+        </main>
     );
 }

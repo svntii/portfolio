@@ -2,6 +2,8 @@ import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import List from '@mui/material/List';
 import ListItem from '@mui/material/ListItem';
+import { profileBoxStyles } from '@/pages/styles';
+
 
 interface ProfilePage {
     name: string;
@@ -23,7 +25,7 @@ export function Profile({ name, title, description, interests, socials }: Profil
 
 function BioBox({ name, title, description }: { name: string, title: string, description: string }) {
     return (
-        <Box sx={{ maxWidth: 600, maxHeight: 90, bgcolor: 'background.paper', p: 2, mt: 2, overflow: 'hidden', '&:hover': { maxHeight: 600 } }}>
+        <Box sx={{ ...profileBoxStyles(600, 90, 600) }}>
             <Typography variant="h4" component="div" sx={{ color: 'text.primary', '&:hover': { backgroundColor: 'blueviolet', color: 'white' } }}>
                 {name}
             </Typography>
@@ -38,7 +40,7 @@ function BioBox({ name, title, description }: { name: string, title: string, des
 }
 
 function InterestsBox(interests: string[]) {
-    return <Box sx={{ maxWidth: 600, maxHeight: 50, bgcolor: 'background.paper', p: 2, mt: 2, overflow: 'hidden', '&:hover': { maxHeight: 400 } }}>
+    return <Box sx={{ ...profileBoxStyles(600, 50, 400) }}>
         <Typography variant="body1" sx={{ color: 'text.primary', fontWeight: '600' }}>
             Interests 🧠
         </Typography>
@@ -57,7 +59,7 @@ function InterestsBox(interests: string[]) {
 
 function SocialsBox(socials: string[]) {
     return (
-        <Box sx={{ maxWidth: 600, maxHeight: 50, bgcolor: 'background.paper', p: 2, mt: 2, overflow: 'hidden', '&:hover': { maxHeight: 400 } }}>
+        <Box sx={{ ...profileBoxStyles(600, 50, 400) }}>
             <Typography variant="body1" sx={{ color: 'text.primary', fontWeight: '600' }}>
                 Socials 📱
             </Typography>
