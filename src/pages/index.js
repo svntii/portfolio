@@ -5,11 +5,9 @@ import { Profile } from '../components/home/profileBox';
 import { BlogList } from "../components/blog/blogList"
 import config from '../app/config.json';
 import CssBaseline from '@mui/material/CssBaseline';
-import { BottomNav } from '../components/bNav';
-import { getSortedPostsData } from '@/posts';
-import Head from 'next/head';
+import { getSortedPostsData } from '../../lib/posts';
 import { homeBoxStyle } from '@/app/styles';
-
+import Head from 'next/head';
 
 export async function getStaticProps() {
     const allPostsData = getSortedPostsData();

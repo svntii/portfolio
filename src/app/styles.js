@@ -6,9 +6,10 @@ export const homeBoxStyle = {
     alignItems: 'center',
     justifyContent: 'center',
     background: 'black',
+    padding: '1em'
 };
 
-export function profileBoxStyles( maxWidth, maxHeight, overflowMaxHeight) {
+export function profileBoxStyles(maxWidth, maxHeight, overflowMaxHeight) {
     return {
         maxWidth: maxWidth,
         maxHeight: maxHeight, bgcolor: 'background.paper',
@@ -16,6 +17,6 @@ export function profileBoxStyles( maxWidth, maxHeight, overflowMaxHeight) {
         mt: 2,
         overflow: 'hidden',
         '&:hover': { maxHeight: overflowMaxHeight },
-        borderRadius: '8px'
+        borderRadius: '8px',
     }
 }
