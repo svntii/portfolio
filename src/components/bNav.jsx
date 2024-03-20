@@ -4,6 +4,8 @@ import BottomNavigation from '@mui/material/BottomNavigation';
 import BottomNavigationAction from '@mui/material/BottomNavigationAction';
 import HomeIcon from '@mui/icons-material/Home';
 import Link from 'next/link';
+import GetAppIcon from '@mui/icons-material/GetApp';
+
 
 export function BottomNav() {
     const [value, setValue] = useState(0);
@@ -17,11 +19,15 @@ export function BottomNav() {
                 }}
             >
                 <BottomNavigationAction
-                icon={<HomeIcon style={{fontSize: 40}}/>} 
-                LinkComponent={Link}
-                href='/'
+                    icon={<HomeIcon style={{ fontSize: 40 }} />}
+                    LinkComponent={Link}
+                    href='/'
                 />
-                
+                <BottomNavigationAction
+                    icon={<GetAppIcon style={{ fontSize: 40 }} />}
+                    href='/SJRODRIGUEZ_ATS.pdf'
+                    download="SJRODRIGUEZ_ATS.pdf"
+                />
             </BottomNavigation>
         </Box>
     );

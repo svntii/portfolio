@@ -18,7 +18,7 @@
       }
     ],
     "paths": {
-      "@/*": ["./src/*", "./lib/*"]
+      "@/*": ["./src/*", "./lib/*,", "./public/*"]
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "lib/posts.js", "src/pages/index.js", "src/components/blog/blogList.js"],
