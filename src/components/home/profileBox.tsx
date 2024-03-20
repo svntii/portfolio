@@ -23,7 +23,7 @@ export function Profile({ name, title, description, interests, socials }: Profil
 
 function BioBox({ name, title, description }: { name: string, title: string, description: string }) {
     return (
-        <Box sx={{ maxWidth: 600, maxHeight:90, bgcolor: 'background.paper', p: 2, mt: 2, overflow: 'hidden', '&:hover': { maxHeight: 600 } }}>
+        <Box sx={{ maxWidth: 600, maxHeight: 90, bgcolor: 'background.paper', p: 2, mt: 2, overflow: 'hidden', '&:hover': { maxHeight: 600 } }}>
             <Typography variant="h4" component="div" sx={{ color: 'text.primary', '&:hover': { backgroundColor: 'blueviolet', color: 'white' } }}>
                 {name}
             </Typography>
@@ -39,7 +39,7 @@ function BioBox({ name, title, description }: { name: string, title: string, des
 
 function InterestsBox(interests: string[]) {
     return <Box sx={{ maxWidth: 600, maxHeight: 50, bgcolor: 'background.paper', p: 2, mt: 2, overflow: 'hidden', '&:hover': { maxHeight: 400 } }}>
-        <Typography variant="body1" sx={{ color: 'text.primary' }}>
+        <Typography variant="body1" sx={{ color: 'text.primary', fontWeight: '600' }}>
             Interests 🧠
         </Typography>
         <List>
@@ -58,7 +58,7 @@ function InterestsBox(interests: string[]) {
 function SocialsBox(socials: string[]) {
     return (
         <Box sx={{ maxWidth: 600, maxHeight: 50, bgcolor: 'background.paper', p: 2, mt: 2, overflow: 'hidden', '&:hover': { maxHeight: 400 } }}>
-            <Typography variant="body1" sx={{ color: 'text.primary' }}>
+            <Typography variant="body1" sx={{ color: 'text.primary', fontWeight: '600' }}>
                 Socials 📱
             </Typography>
             <List>
