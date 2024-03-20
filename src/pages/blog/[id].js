@@ -12,7 +12,7 @@ export default function Post({ postData }) {
             <Head>
                 <title>{postData.title}</title>
             </Head>
-            <Box sx={{ width: '100vw', height: '100vh' }}>
+            <Box sx={{padding:"3em", background:"background.paper"}}>
                 <article>
                     <Typography variant="h4" sx={{ marginBottom: '1em' }}>{postData.title}</Typography>
                     <Typography variant="subtitle1" sx={{ marginBottom: '1em', color: 'gray' }}>

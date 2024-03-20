@@ -1,12 +1,12 @@
 ---
-title: 'Hello World'
-date: '2024-03-20'
+title: 'Hello World!'
+date: '2024-03-19'
 ---
 
-Hello World!
+Hello to anyone that comes across this page!
 
 
- My first blog post ... feels weird as a write this on a bus at ~2am on a bus to Atlanta. But working these past fews days in multiple projects, trying to immerse myself in more technical knowledge, more on that in future posts.
+ My first blog post ... feels weird as I write this on a bus at ~2am on a bus to Atlanta. But working these past fews days on multiple projects, trying to immerse myself in more technical knowledge exhilirating - more on that in future posts.
 
 In the following posts, I will try to share an inside scoop on my brain. I hope these provide value to someone in the future. 
 

@@ -11,7 +11,9 @@ By following the base curriculum at Notre Dame found [here](https://cse.nd.edu/u
 
 ## Doing the bare minimum is not enough.
 
-The following advice applies to any academic setting you may find yourself. Your mindset and grind to get things done will put you minimum in the top 5 percentile of applicants. Notre Dame is not renowned (at this moment) as a MIT or Stanford, so it doesn't get the pull of the Google's and Apple's of the world. Recruiting is tough. You must put in the extra hours to elevate and separate yourself from others. Following the mean in my opinion is how you get forgotten. Do more. 
+The following advice applies to any academic setting you may find yourself. Your mindset and grind to get things done will put you minimum in the top 5 percentile of applicants. Notre Dame is not renowned (at this moment) as a MIT or Stanford, so it doesn't get the pull of the Google's and Apple's of the world. Recruiting is tough. You must put in the extra hours to elevate and separate yourself from others. Following the mean in my opinion is how you get forgotten. 
+
+## Do more. 
 
 While there are a bunch of caveats of what I just said, overall it is good advice. 
 
@@ -152,6 +154,6 @@ All of them (No Ranking)
 - Lizao Wang	
 
 
-Thank you all the professor who guided me to becoming a better person.
+Thank you all the professor who guided me to becoming a better person. ❤️
 
 svntii
