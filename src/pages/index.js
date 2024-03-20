@@ -8,7 +8,7 @@ import CssBaseline from '@mui/material/CssBaseline';
 import { BottomNav } from '../components/bNav';
 import { getSortedPostsData } from '@/posts';
 import Head from 'next/head';
-import { homeBoxStyle } from '@/pages/styles';
+import { homeBoxStyle } from '@/app/styles';
 
 
 export async function getStaticProps() {

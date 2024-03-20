@@ -1,6 +1,4 @@
 
-
-
 export const homeBoxStyle = {
     display: 'flex',
     flexDirection: 'column',

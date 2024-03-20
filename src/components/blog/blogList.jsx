@@ -2,7 +2,7 @@ import React from 'react';
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import Link from 'next/link';
-import { profileBoxStyles } from '@/pages/styles';
+import { profileBoxStyles } from '@/app/styles';
 import Date from '../../components/date';
 
 
