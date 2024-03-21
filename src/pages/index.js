@@ -3,6 +3,7 @@ import Box from '@mui/material/Box';
 
 import { Profile } from '../components/home/profileBox';
 import { BlogList } from "../components/blog/blogList"
+import { CareerBox } from "../components/career/careerBox"
 import config from '../app/config.json';
 import CssBaseline from '@mui/material/CssBaseline';
 import { getSortedPostsData } from '../../lib/posts';
@@ -40,8 +41,12 @@ export default function Home({ allPostsData }) {
                     expandedBox={expandedBox}
                     setExpandedBox={setExpandedBox}
                 />
-                <BlogList 
+                <BlogList
                     allPostsData={allPostsData}
+                    expandedBox={expandedBox}
+                    setExpandedBox={setExpandedBox}
+                />
+                <CareerBox
                     expandedBox={expandedBox}
                     setExpandedBox={setExpandedBox}
                 />
