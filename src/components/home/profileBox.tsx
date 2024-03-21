@@ -11,21 +11,29 @@ interface ProfilePage {
     description: string;
     interests: string[];
     socials: string[];
+    expandedBox: string | null;
+    setExpandedBox: (value: string) => void;
 }
 
-export function Profile({ name, title, description, interests, socials }: ProfilePage) {
+export function Profile({ name, title, description, interests, socials, expandedBox, setExpandedBox }: ProfilePage) {
     return (
         <div>
-            {BioBox({ name, title, description })}
-            {InterestsBox(interests)}
-            {SocialsBox(socials)}
+            {BioBox({ name, title, description, isExpanded: expandedBox === 'bio', setExpanded: () => setExpandedBox('bio') })}
+            {InterestsBox({ interests, isExpanded: expandedBox === 'interests', setExpanded: () => setExpandedBox('interests') })}
+            {SocialsBox({ socials, isExpanded: expandedBox === 'socials', setExpanded: () => setExpandedBox('socials') })}
         </div>
     );
 }
 
-function BioBox({ name, title, description }: { name: string, title: string, description: string }) {
+function BioBox({ name, title, description, isExpanded, setExpanded }: { name: string, title: string, description: string, isExpanded: boolean, setExpanded: () => void }) {
+    const maxWidth = 600;
+    const maxHeight = 90;
+
     return (
-        <Box sx={{ ...profileBoxStyles(600, 90, 600) }}>
+        <Box sx={{
+            ...profileBoxStyles(maxWidth, isExpanded ? 'none' : maxHeight)}} 
+            onClick={setExpanded}>
+
             <Typography variant="h4" component="div" sx={{ color: 'text.primary', '&:hover': { backgroundColor: 'blueviolet', color: 'white' } }}>
                 {name}
             </Typography>
@@ -39,27 +47,36 @@ function BioBox({ name, title, description }: { name: string, title: string, des
     );
 }
 
-function InterestsBox(interests: string[]) {
-    return <Box sx={{ ...profileBoxStyles(600, 50, 400) }}>
+function InterestsBox({ interests, isExpanded, setExpanded }: { interests: string[], isExpanded: boolean, setExpanded: () => void }) {
+    const maxWidth = 600;
+    const maxHeight = 50;
+    return (<Box sx={{
+        ...profileBoxStyles(maxWidth, isExpanded ? 'none' : maxHeight)}} 
+        onClick={setExpanded}>
+        
         <Typography variant="body1" sx={{ color: 'text.primary', fontWeight: '600' }}>
             Interests 🧠
         </Typography>
         <List>
             {interests.map((interest, index) => (
                 <ListItem key={index}>
-                    <Typography variant="body2" sx={{ color: 'text.primary', '&:hover': { backgroundColor: 'blueviolet', color: 'white' } }}>
+                    <Typography variant="body2" sx={{ color: 'text.primary', '&:hover': { backgroundColor: 'blueviolet', color: 'white' }}}>
                         {interest}
                     </Typography>
                 </ListItem>
             ))}
         </List>
-    </Box>;
+    </Box>);
 }
 
 
-function SocialsBox(socials: string[]) {
+function SocialsBox({ socials, isExpanded, setExpanded }: { socials: string[], isExpanded: boolean, setExpanded: () => void }) {
+    const maxWidth = 600;
+    const maxHeight = 50;
     return (
-        <Box sx={{ ...profileBoxStyles(600, 50, 400) }}>
+        <Box sx={{
+            ...profileBoxStyles(maxWidth, isExpanded ? 'none' : maxHeight)}} 
+            onClick={setExpanded}>
             <Typography variant="body1" sx={{ color: 'text.primary', fontWeight: '600' }}>
                 Socials 📱
             </Typography>

@@ -6,9 +6,17 @@ import { profileBoxStyles } from '@/app/styles';
 import Date from '../../components/date';
 
 
-export function BlogList({ allPostsData }) {
+export function BlogList({ allPostsData, expandedBox, setExpandedBox }) {
+    const maxWidth = 600;
+    const maxHeight = 50;
+    const isExpanded = expandedBox === 'blog';
+    const setExpanded = () => setExpandedBox(isExpanded ? null : 'blog');
+    
     return (
-        <Box sx={{ ...profileBoxStyles(600, 50, 600), width: '100%' }}>
+        <Box sx={{
+            ...profileBoxStyles(maxWidth, isExpanded ? 'none' : maxHeight), width: '100%'}} 
+            onClick={setExpanded}>
+
             <Typography variant="body1" sx={{ fontWeight: '600' }}>Blog 🧑‍💻</Typography>
             <ul style={{ listStyle: 'none', padding: 0 }}>
                 {allPostsData.slice(0, 5).map(({ id, date, title }) => (

@@ -16,7 +16,6 @@ export function profileBoxStyles(maxWidth, maxHeight, overflowMaxHeight) {
         p: 2,
         mt: 2,
         overflow: 'hidden',
-        '&:hover': { maxHeight: overflowMaxHeight },
         borderRadius: '8px',
     }
 }
