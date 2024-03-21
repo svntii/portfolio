@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Box from '@mui/material/Box';
 import BottomNavigation from '@mui/material/BottomNavigation';
 import BottomNavigationAction from '@mui/material/BottomNavigationAction';
@@ -6,10 +6,25 @@ import HomeIcon from '@mui/icons-material/Home';
 import RssFeedIcon from '@mui/icons-material/RssFeed';
 import Link from 'next/link';
 import GetAppIcon from '@mui/icons-material/GetApp';
+import { useRouter } from 'next/router';
 
 
 export function BottomNav() {
-    const [value, setValue] = useState(0);
+    const router = useRouter();
+    const [value, setValue] = useState(getInitialValue(router.pathname));
+    useEffect(() => {
+        setValue(getInitialValue(router.pathname));
+    }, [router.pathname]);
+
+    function getInitialValue(path) {
+        if (path === '/blog' || path.startsWith('/blog/')) {
+            return 0;
+        } else if (path === '/') {
+            return 1;
+        } else {
+            return 0;
+        }
+    }
 
     return (
         <Box sx={{ width: '100%', position: 'fixed', bottom: 0 }}>
