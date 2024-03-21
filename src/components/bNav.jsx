@@ -4,6 +4,7 @@ import BottomNavigation from '@mui/material/BottomNavigation';
 import BottomNavigationAction from '@mui/material/BottomNavigationAction';
 import HomeIcon from '@mui/icons-material/Home';
 import RssFeedIcon from '@mui/icons-material/RssFeed';
+import WorkHistoryIcon from '@mui/icons-material/WorkHistory';
 import Link from 'next/link';
 import GetAppIcon from '@mui/icons-material/GetApp';
 import { useRouter } from 'next/router';
@@ -44,6 +45,11 @@ export function BottomNav() {
                     icon={<HomeIcon style={{ fontSize: 40 }} />}
                     LinkComponent={Link}
                     href='/'
+                />
+                <BottomNavigationAction
+                    icon={<WorkHistoryIcon style={{ fontSize: 40 }} />}
+                    LinkComponent={Link}
+                    href='/career'
                 />
                 <BottomNavigationAction
                     icon={<GetAppIcon style={{ fontSize: 40 }} />}

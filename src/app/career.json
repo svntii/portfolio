@@ -1,0 +1,273 @@
+{
+    "jobs": [
+        {
+            "title": "Software Engineer [Evolve]",
+            "company": "Apple",
+            "startDate": "2024-07-27",
+            "endDate": "",
+            "location": "New York, NY",
+            "responsibilities": [
+                "Joined the Enterprise Education Technologies Boost Team and actively contributed to the development of customer features and internal tooling.",
+                "Architected a swift framework that leveraged SPI's and XPC services to enhance the overall customer experience.",
+                "Worked with interns in the iContest to create a compelling visual abstract, and pitching the feature to senior executives.",
+                "Tested, screened and triaged bugs by viewing device logs and finding a clearer, defined way of reproducibility."
+            ],
+            "skills": [
+                "Swift/UI",
+                "Objective-C",
+                "X-Code",
+                "IPC",
+                "ScreenTime",
+                "Device Management"
+            ],
+            "thoughts": ""
+        },
+        {
+            "title": "Software Engineer Intern",
+            "company": "Apple",
+            "startDate": "2023-05-15",
+            "endDate": "2023-08-05",
+            "location": "San Diego, CA",
+            "responsibilities": [
+                "Joined the Enterprise Education Technologies Boost Team and actively contributed to the development of customer features and internal tooling.",
+                "Architected a swift framework that leveraged SPI's and XPC services to enhance the overall customer experience.",
+                "Worked with interns in the iContest to create a compelling visual abstract, and pitching the feature to senior executives.",
+                "Tested, screened and triaged bugs by viewing device logs and finding a clearer, defined way of reproducibility."
+            ],
+            "skills": [
+                "Swift/UI",
+                "Objective-C",
+                "X-Code",
+                "IPC",
+                "ScreenTime",
+                "Device Management"
+            ],
+            "thoughts": ""
+        },
+        {
+            "title": "Software Engineer Intern",
+            "company": "BILL",
+            "startDate": "2023-01-15",
+            "endDate": "2023-05-05",
+            "location": "San Jose, CA",
+            "responsibilities": [
+                "Joined the Developer Platform API team.",
+                "Focused on splitting processes off monolith engine into scalable Lambda micro-processes.",
+                "Implemented an end-to-end AutoPay feature endpoint that would enable seamless integration between applications.",
+                "Tested, screened and triaged bugs by viewing device logs and finding a clearer, defined way of reproducibility."
+            ],
+            "skills": [
+                "Java",
+                "Gradle",
+                "RESTful API",
+                "OpenAPI",
+                "Junit",
+                "Micronaut"
+            ],
+            "thoughts": ""
+        },
+        {
+            "title": "Brand Sales Engineer Intern",
+            "company": "IBM",
+            "startDate": "2022-05-15",
+            "endDate": "2023-12-05",
+            "location": "San Francisco, CA",
+            "responsibilities": [
+                "Assisted IBM Northwest's Automation portfolio in their development, management and execution on strategies and tactics for closing business",
+                "Performed in-depth assessments of customer processes to uncover and understand the customer’s business issues, in which generated 10 leads via cold emailing/calling.",
+                "Worked intimately with IBM’s Cloud and AI solutions to prepare client use-case demonstrations and decks."
+            ],
+            "skills": [
+                "Python",
+                "Salesforce",
+                "Figma",
+                "IBM Cloud"
+            ],
+            "thoughts": ""
+        },
+        {
+            "title": "Financial Analyst Intern",
+            "company": "Stifel",
+            "startDate": "2021-05-15",
+            "endDate": "2021-08-05",
+            "location": "New York City, NY",
+            "responsibilities": [
+                "Created financial models for managers that monitored their respective bankers' success on deals, and more.",
+                "Fixed a 3 year long issue pipeline issue by analyzing and refining deal memos in Stifel's database. This fixture improved data and allowed for Manager's to create more effective deals.",
+                "Reviewed and filed monthly sensitive tax reconciliation reports for the IRS."
+            ],
+            "skills": [
+                "Python",
+                "Salesforce",
+                "Excel Modeling"
+            ],
+            "thoughts": ""
+        },
+        {
+            "title": "Financial Analyst Intern",
+            "company": "Capra Ibex Advisors",
+            "startDate": "2019-06-27",
+            "endDate": "2021-08-05",
+            "location": "New York City, NY",
+            "responsibilities": [
+                "#TODO"
+            ],
+            "skills": [
+                "Python",
+                "Salesforce",
+                "Excel Modeling"
+            ],
+            "thoughts": ""
+        },
+        {
+            "title": "Warehouse (Bike Assembler)",
+            "company": "Peleton",
+            "startDate": "2019-06-27",
+            "endDate": "2021-08-05",
+            "location": "Mount Vernon, NY",
+            "responsibilities": [
+                "#TODO"
+            ],
+            "skills": [
+                "TODO"
+            ],
+            "thoughts": ""
+        },
+        {
+            "title": "Caddie",
+            "company": "Winged Foot Golf Club",
+            "startDate": "2019-04-01",
+            "endDate": "2021-06-01",
+            "location": "Westchester, NY",
+            "responsibilities": [
+                "#TODO"
+            ],
+            "skills": [
+                "TODO"
+            ],
+            "thoughts": ""
+        },
+        {
+            "title": "Cashier",
+            "company": "Target",
+            "startDate": "2018-11-01",
+            "endDate": "2019-01-01",
+            "location": "Bronx, NY",
+            "responsibilities": [
+                "#TODO"
+            ],
+            "skills": [
+                "TODO"
+            ],
+            "thoughts": ""
+        }
+    ],
+    "projects": [
+        {
+            "name": "Multi-class Segmentation Model",
+            "startDate": "2023-01-15",
+            "endDate": "2023-05-05",
+            "description": "TODO",
+            "responsibilities": [
+                "TODO"
+            ],
+            "skills": [
+                "Python",
+                "PyTorch",
+                "WandB"
+            ],
+            "github": "",
+            "thoughts": ""
+        },
+        {
+            "name": "bonsAI",
+            "startDate": "2023-01-15",
+            "endDate": "2023-05-05",
+            "description": "TODO",
+            "responsibilities": [
+                "TODO"
+            ],
+            "skills": [
+                "Python",
+                "Tkinter",
+                "openai",
+                "LangChain"
+            ],
+            "github": "",
+            "thoughts": ""
+        },
+        {
+            "name": "EyeTrack",
+            "startDate": "2023-01-15",
+            "endDate": "2023-05-05",
+            "description": "A mobile application that uses computer vision to track eye movement and provide feedback to the user.",
+            "responsibilities": [
+                "Developed a CV model that is able to detect, track, and accurately determine where a subject is looking at via a camera feed. Then translate the data from the model to mouse movement, and incorporated gesture recognition - for clicking, gesturing, etc.",
+                "Our software is broken up into two components - Gaze Tracking and Gesture Detection"
+            ],
+            "skills": [
+                "Python",
+                "OpenFace",
+                "OpenCV",
+                "MediaPipe"
+            ],
+            "github": "https://github.com/svntii/eyeTrack",
+            "thoughts": ""
+        },
+        {
+            "name": "B-Minor Compiler",
+            "startDate": "2023-01-15",
+            "endDate": "2023-05-05",
+            "description": "A compiler for the B-Minor programming language",
+            "responsibilities": [
+                "Constructed a working compiler that transforms C into x86 assembly code.",
+                "The project was broken down into five steps, requiring the construction of a scanner, parser, type checker, source translator, and code generator.",
+                "From this project I was able to learn topics ranging from the abstract theory of automata to the very practical details of assembly languages."
+            ],
+            "skills": [
+                "C++",
+                "Flex",
+                "Bison"
+            ],
+            "github": "https://github.com/svntii/srodri25-compiler",
+            "thoughts": ""
+        },
+        {
+            "name": "Lambda Calculus Interpreter",
+            "startDate": "2023-01-15",
+            "endDate": "2023-05-05",
+            "description": "Created a Visualizer/Interpreter for a Lambda Calculus terms with their respective types",
+            "responsibilities": [
+                "Learned how to define programming languages using operational semantics and type systems, and how to prove things about them",
+                "Implemented an Interpreter for Lambda Calculus Interpreter, a simple programming language that is built up, with higher-order functions and lexical scope; algebraic data types, polymorphic types, and type inference; state and control.",
+                "Analyzed different design + semantic methods such as big and small step evalution to ensure our Interpreters had the intended consequences.",
+                "Studied the developments and implementation of functional languages such as OCaml and Scheme."
+            ],
+            "skills": [
+                "Python",
+                "Tkinter"
+            ],
+            "github": "https://github.com/ND-CSE-40431/pl-programming-svntii",
+            "thoughts": ""
+        },
+        {
+            "name": "Happiest Matchmaking App",
+            "startDate": "2023-01-15",
+            "endDate": "2023-05-05",
+            "description": "Developed, implemented, and tested the Gale-Shapley Algorithm to create matching making application for professors to match advisors with students.",
+            "responsibilities": [
+                "Identified critical tasks, determined project dependencies and design considerations.",
+                "Delivered weekly code reviews and professional memorandums detailing project progress, assessed risks and alternatives, developed prototypes, and determined new project objectives.",
+                "Designed the UI/UX of the application using Figma."
+            ],
+            "skills": [
+                "Python",
+                "Pandas",
+                "Numpy",
+                "ImapLib"
+            ],
+            "github": "https://github.com/svntii/Student-Advisor-Matching",
+            "thoughts": ""
+        }
+    ]
+}
