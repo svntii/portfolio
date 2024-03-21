@@ -28,6 +28,10 @@ export function BlogList({ allPostsData, expandedBox, setExpandedBox }) {
                     </li>
                 ))}
             </ul>
+
+            <Link href={"/blog"}>
+                    <Typography variant="caption" sx={{ }}>More...</Typography>
+            </Link>
         </Box>
     );
 }
