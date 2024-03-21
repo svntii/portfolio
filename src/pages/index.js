@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React, { useState } from 'react';
 import Box from '@mui/material/Box';
 
 import { Profile } from '../components/home/profileBox';
@@ -20,6 +20,8 @@ export async function getStaticProps() {
 
 
 export default function Home({ allPostsData }) {
+    const [expandedBox, setExpandedBox] = useState(null);
+
     return (
         <main>
             <Head>
@@ -35,8 +37,14 @@ export default function Home({ allPostsData }) {
                     description={config.profile.description}
                     interests={config.profile.interests}
                     socials={[config.profile.socials.github, config.profile.socials.linkedin, config.profile.socials.twitter]}
+                    expandedBox={expandedBox}
+                    setExpandedBox={setExpandedBox}
                 />
-                <BlogList allPostsData={allPostsData} />
+                <BlogList 
+                    allPostsData={allPostsData}
+                    expandedBox={expandedBox}
+                    setExpandedBox={setExpandedBox}
+                />
             </Box>
         </main>
     );
