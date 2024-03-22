@@ -78,9 +78,9 @@ function InterestsBox({ interests, isExpanded, setExpanded }: { interests: strin
         <Typography variant="body1" sx={{ color: 'text.primary', fontWeight: '600' }}>
             Interests 🧠
         </Typography>
-        <List>
+        <List sx={{ paddingLeft: '1em' }}>
             {interests.map((interest, index) => (
-                <ListItem key={index}>
+                <ListItem key={index} sx={{ paddingLeft: '1em' }}>
                     <Typography variant="body2" sx={{ color: 'text.primary', '&:hover': { backgroundColor: 'blueviolet', color: 'white' } }}>
                         {interest}
                     </Typography>
