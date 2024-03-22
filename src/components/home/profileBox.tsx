@@ -80,7 +80,8 @@ function InterestsBox({ interests, isExpanded, setExpanded }: { interests: strin
         </Typography>
         <List sx={{ paddingLeft: '1em' }}>
             {interests.map((interest, index) => (
-                <ListItem key={index} sx={{ paddingLeft: '1em' }}>
+
+                <ListItem key={index}>
                     <Typography variant="body2" sx={{ color: 'text.primary', '&:hover': { backgroundColor: 'blueviolet', color: 'white' } }}>
                         {interest}
                     </Typography>
