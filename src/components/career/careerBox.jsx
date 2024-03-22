@@ -19,10 +19,10 @@ export function CareerBox({ expandedBox, setExpandedBox }) {
             width: '100%',
         }}
             onClick={setExpanded}>
-            <Box display="flex" flexDirection="column"> 
-                <Typography variant="body1" sx={{ fontWeight: '600', marginBottom: '0.5em' }}>Job History 💰 </Typography>
+            <Box display="flex" flexDirection="column">
+                <Typography variant="body1" sx={{ fontWeight: '600', paddingBottom:1 }}> Job History 💰 </Typography>
                 <Typography variant="caption" sx={{ marginBottom: '0.5em' }}>{"Most Recent Role: "}</Typography>
-                <Typography variant="body1" sx={{ marginBottom: '0.5em' }}>{recentCareer.title + " @ " + recentCareer.company}</Typography>
+                <Typography variant="body1" sx={{ marginBottom: '0.5em', fontWeight: 'bold' }}>{recentCareer.title + " @ " + recentCareer.company}</Typography>
                 <Typography variant="body2" sx={{ marginBottom: '0.5em' }}>{recentCareer.location}</Typography>
                 <Box display="block">
                     <Link href={"/career"}>
