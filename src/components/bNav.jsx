@@ -22,6 +22,11 @@ export function BottomNav() {
             return 0;
         } else if (path === '/') {
             return 1;
+        }
+        else if (path === '/career') {
+            return 2;
+        } else if (path === '/SJRODRIGUEZ_ATS.pdf') {
+            return 3;
         } else {
             return 0;
         }
