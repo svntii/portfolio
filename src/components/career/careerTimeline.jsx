@@ -6,16 +6,22 @@ import TimelineConnector from '@mui/lab/TimelineConnector';
 import TimelineContent from '@mui/lab/TimelineContent';
 import TimelineOppositeContent from '@mui/lab/TimelineOppositeContent';
 import TimelineDot from '@mui/lab/TimelineDot';
-import LaptopMacIcon from '@mui/icons-material/LaptopMac';
 import Typography from '@mui/material/Typography';
 
 
-
+import Box from '@mui/material/Box';
 import Accordion from '@mui/material/Accordion';
 import AccordionSummary from '@mui/material/AccordionSummary';
 import AccordionDetails from '@mui/material/AccordionDetails';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 
+
+import AppleIcon from '@mui/icons-material/Apple';
+import LaptopMacIcon from '@mui/icons-material/LaptopMac';
+import CodeIcon from '@mui/icons-material/Code';
+import WorkIcon from '@mui/icons-material/Work';
+import AccountBalanceIcon from '@mui/icons-material/AccountBalance';
+import GolfCourseIcon from '@mui/icons-material/GolfCourse';
 
 import career from "@/app/career.json";
 import { DateShort } from "@/components/date";
@@ -32,11 +38,18 @@ export function CareerTimeline() {
     );
 }
 
-
+const ICONS = {
+    'laptop': LaptopMacIcon,
+    'apple': AppleIcon,
+    "SWE": CodeIcon,
+    'finance': AccountBalanceIcon,
+    'golf': GolfCourseIcon,
+    'default': WorkIcon
+  };
 
 function Job({ job }) {
-
-    const boxStyles = { width: '80%'}
+    const Icon = ICONS[job.icon];
+    const boxStyles = { width: '80%' }
 
     return (
         <TimelineItem>
@@ -49,50 +62,98 @@ function Job({ job }) {
                 <DateShort dateString={job.startDate} />
             </TimelineOppositeContent>
             <TimelineSeparator>
-                <TimelineConnector />
-                <TimelineDot>
-                    <LaptopMacIcon />
+                
+                <TimelineConnector style={{ backgroundColor: 'black' }} />
+                <TimelineDot style={{ backgroundColor: 'purple' }}>
+                {Icon && <Icon style={{ backgroundColor: 'purple' }}  />}
                 </TimelineDot>
-                <TimelineConnector />
+                <TimelineConnector style={{ backgroundColor: 'black' }} />
+            
+            
             </TimelineSeparator>
-            <TimelineContent sx={{ py: '12px', px: 2}}>
-                <Typography variant="h6" component="span">
-                    {job.title}
-                </Typography>
-                <Typography>{job.company}</Typography>
-                <Accordion sx={{ ...boxStyles }}>
-                    <AccordionSummary
-                        expandIcon={<ExpandMoreIcon />}
-                        aria-controls="panel1a-content"
-                        id="panel1a-header"
-                    >
-                        <Typography>Responsibilities</Typography>
-                    </AccordionSummary>
-                    <AccordionDetails>
-                        <ul>
-                            {job.responsibilities.map((responsibility, index) => (
-                                <li key={index}>
-                                    <Typography align="left" sx={{ paddingBottom: 1 }}>{responsibility}</Typography>
-                                </li>
-                            ))}
-                        </ul>
-                    </AccordionDetails>
-                </Accordion>
-                <Accordion sx={{ ...boxStyles }} >
-                    <AccordionSummary
-                        expandIcon={<ExpandMoreIcon />}
-                        aria-controls="panel2a-content"
-                        id="panel2a-header"
-                    >
-                        <Typography>Thoughts</Typography>
-                    </AccordionSummary>
-                    <AccordionDetails>
-                        <Typography>
-                            {job.thoughts}
-                        </Typography>
-                    </AccordionDetails>
-                </Accordion>
+            <TimelineContent sx={{ py: '12px', px: 2 }}>
+                
+                <Box sx={{ paddingBottom: 1, paddingLeft: 1 }}>
+
+                    <Typography variant="h5" component="span">
+                        {job.title}
+                    </Typography>
+                    <Typography variant='body2'>{job.company}</Typography>
+                    <Typography variant='caption'>{job.location}</Typography>
+
+
+                </Box>
+
+                <Box>
+                    <AccordionSection
+                        title={"Responsibilities"}
+                        listItem={job.responsibilities}
+                        boxStyles={boxStyles}
+                    />
+
+
+                    <ThoughtSection
+                        title="Thoughts"
+                        content={job.thoughts}
+                        boxStyles={boxStyles}
+                    />
+
+
+                    <AccordionSection
+                        title={"Skills"}
+                        listItem={job.skills}
+                        boxStyles={boxStyles}
+                    />
+
+                </Box>
+
+
+
             </TimelineContent>
         </TimelineItem>
+    );
+}
+
+
+function ThoughtSection({ title, content, boxStyles }) {
+    return (
+        <Accordion sx={{ ...boxStyles }}>
+            <AccordionSummary
+                expandIcon={<ExpandMoreIcon />}
+                aria-controls="panel1a-content"
+                id="panel1a-header"
+            >
+                <Typography>{title}</Typography>
+            </AccordionSummary>
+            <AccordionDetails>
+                <Typography align="left">
+                    {content}
+                </Typography>
+            </AccordionDetails>
+        </Accordion>
+    );
+}
+
+
+function AccordionSection({ title, listItem, boxStyles }) {
+    return (
+        <Accordion sx={{ ...boxStyles }}>
+            <AccordionSummary
+                expandIcon={<ExpandMoreIcon />}
+                aria-controls="panel1a-content"
+                id="panel1a-header"
+            >
+                <Typography>{title}</Typography>
+            </AccordionSummary>
+            <AccordionDetails>
+                <ul>
+                    {listItem.map((item, index) => (
+                        <li key={index}>
+                            <Typography align="left" sx={{ paddingBottom: 1 }}>{item}</Typography>
+                        </li>
+                    ))}
+                </ul>
+            </AccordionDetails>
+        </Accordion>
     );
 }

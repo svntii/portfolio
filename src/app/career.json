@@ -6,21 +6,12 @@
             "startDate": "2024-07-27",
             "endDate": "",
             "location": "New York, NY",
+            "icon": "apple",
             "responsibilities": [
-                "Joined the Enterprise Education Technologies Boost Team and actively contributed to the development of customer features and internal tooling.",
-                "Architected a swift framework that leveraged SPI's and XPC services to enhance the overall customer experience.",
-                "Worked with interns in the iContest to create a compelling visual abstract, and pitching the feature to senior executives.",
-                "Tested, screened and triaged bugs by viewing device logs and finding a clearer, defined way of reproducibility."
+                "Joined 3 x 8 month rotational program in the Services Organization that focuses on developing future visionaries in Apple."
             ],
-            "skills": [
-                "Swift/UI",
-                "Objective-C",
-                "X-Code",
-                "IPC",
-                "ScreenTime",
-                "Device Management"
-            ],
-            "thoughts": ""
+            "skills": [],
+            "thoughts": "After not getting a return offer from my internship, I was in the dark. I applied to countless roles, but through that darkness, I knew my baseline. I knew the culture and the type of challenges I wanted to work with. After some time, I received an email from a recruiter from Apple regarding a SWE Accelerate Program. It focused on accelerating the recruiting process. That program was very tedious. Over 12 interviews, and I ended up getting a 2 verbal offers. However, during that time I was introduced to Evolve by a great friend (SebMaster). If not for him, I would have never known about this opportunity. Evolve is a rotational program ( 3 x 8months) with the Services Organization of Apple. At the time writing this I have no experience yet, but I am excited to start working there.  "
         },
         {
             "title": "Software Engineer Intern",
@@ -28,6 +19,7 @@
             "startDate": "2023-05-15",
             "endDate": "2023-08-05",
             "location": "San Diego, CA",
+            "icon": "apple",
             "responsibilities": [
                 "Joined the Enterprise Education Technologies Boost Team and actively contributed to the development of customer features and internal tooling.",
                 "Architected a swift framework that leveraged SPI's and XPC services to enhance the overall customer experience.",
@@ -42,7 +34,7 @@
                 "ScreenTime",
                 "Device Management"
             ],
-            "thoughts": ""
+            "thoughts": "One of the most common questions I get asked is, 'How did you get an internship at Apple?' The answer is simple, I luck. After applying to countless roles and hearing nothing back. One day right before taking my final for Paradigms, I recieved an intro email from my recruiter. My heart dropped and I thought I was being scammed (up until my first day on the job, I thought I was being scammed). After a couple of rounds of interviewing I received my offer and I was elated. My experience during this internship was amazing. I learned a TON, and gained insight on the brilliancy behind Apple's products. I want to end up at San Diego, because it was the perfect compliment that made work-life balance. Shout out Jono, Melissa, and the everyone I worked with. Yall are amazing, fr. Unforately, I wasn't given a return offer, and so leaving out of Apple was nerve racking but I had to bet on myself looking for FT opportunities."
         },
         {
             "title": "Software Engineer Intern",
@@ -50,6 +42,7 @@
             "startDate": "2023-01-15",
             "endDate": "2023-05-05",
             "location": "San Jose, CA",
+            "icon": "SWE",
             "responsibilities": [
                 "Joined the Developer Platform API team.",
                 "Focused on splitting processes off monolith engine into scalable Lambda micro-processes.",
@@ -64,7 +57,7 @@
                 "Junit",
                 "Micronaut"
             ],
-            "thoughts": ""
+            "thoughts": "For my spring semester Junior year (3), I attended a program called Silicon Valley Semester. It is a program that focuses on Computer Science students and allows them to co-op while living in the bay area. This experience is what lead me to BILL. I got a contract working for BILL after reaching out to my mentor and was connected to James (my soon-to-be manager). I am so grateful for James for believing in me and giving me a shot. From BILL I was given my first true SDE experience. I was able to work on a team that was focused on the Developer Platform API. Thus began my interested in system design and distributed computing. BILL is a great company with a lot of upside. They had some growing pains with their recent acquistions, but I beleive it is a perfect place to be at to grow levels quickly. Shout out to James, and the rest of the BILL team for being so welcoming and helpful."
         },
         {
             "title": "Brand Sales Engineer Intern",
@@ -72,6 +65,7 @@
             "startDate": "2022-05-15",
             "endDate": "2023-12-05",
             "location": "San Francisco, CA",
+            "icon": "default",
             "responsibilities": [
                 "Assisted IBM Northwest's Automation portfolio in their development, management and execution on strategies and tactics for closing business",
                 "Performed in-depth assessments of customer processes to uncover and understand the customer’s business issues, in which generated 10 leads via cold emailing/calling.",
@@ -91,6 +85,7 @@
             "startDate": "2021-05-15",
             "endDate": "2021-08-05",
             "location": "New York City, NY",
+            "icon": "finance",
             "responsibilities": [
                 "Created financial models for managers that monitored their respective bankers' success on deals, and more.",
                 "Fixed a 3 year long issue pipeline issue by analyzing and refining deal memos in Stifel's database. This fixture improved data and allowed for Manager's to create more effective deals.",
@@ -109,6 +104,7 @@
             "startDate": "2019-06-27",
             "endDate": "2021-08-05",
             "location": "New York City, NY",
+            "icon": "finance",
             "responsibilities": [
                 "#TODO"
             ],
@@ -125,6 +121,8 @@
             "startDate": "2019-06-27",
             "endDate": "2021-08-05",
             "location": "Mount Vernon, NY",
+            "icon": "default",
+
             "responsibilities": [
                 "#TODO"
             ],
@@ -139,6 +137,7 @@
             "startDate": "2019-04-01",
             "endDate": "2021-06-01",
             "location": "Westchester, NY",
+            "icon": "golf",
             "responsibilities": [
                 "#TODO"
             ],
@@ -153,6 +152,7 @@
             "startDate": "2018-11-01",
             "endDate": "2019-01-01",
             "location": "Bronx, NY",
+            "icon": "default",
             "responsibilities": [
                 "#TODO"
             ],
