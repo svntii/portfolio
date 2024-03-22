@@ -1,5 +1,5 @@
 import { Box, Typography, List, ListItem, ListItemText } from '@mui/material';
-
+import { CareerTimeline } from "../../components/career/careerTimeline"
 
 export default function AllJobs() {
     return (
@@ -7,6 +7,7 @@ export default function AllJobs() {
             <Typography variant="h4" component="div" sx={{ flexGrow: 1, marginBottom: 2 }}>
                 My Job Journey
             </Typography>
+            <CareerTimeline />
         </Box>
     );
 }
