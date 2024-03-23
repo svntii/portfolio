@@ -1,10 +1,13 @@
 import * as React from 'react';
 import Timeline from '@mui/lab/Timeline';
-import TimelineItem from '@mui/lab/TimelineItem';
 import TimelineSeparator from '@mui/lab/TimelineSeparator';
 import TimelineConnector from '@mui/lab/TimelineConnector';
 import TimelineContent from '@mui/lab/TimelineContent';
-import TimelineOppositeContent from '@mui/lab/TimelineOppositeContent';
+
+import TimelineItem, { timelineItemClasses } from '@mui/lab/TimelineItem';
+import TimelineOppositeContent, {
+    timelineOppositeContentClasses,
+} from '@mui/lab/TimelineOppositeContent';
 import TimelineDot from '@mui/lab/TimelineDot';
 import Typography from '@mui/material/Typography';
 
@@ -26,13 +29,37 @@ import GolfCourseIcon from '@mui/icons-material/GolfCourse';
 import career from "@/app/career.json";
 import { DateShort } from "@/components/date";
 
+import { useTheme } from '@mui/material/styles';
+import useMediaQuery from '@mui/material/useMediaQuery';
+
+
 export function CareerTimeline() {
     const jobs = career.jobs;
+    const theme = useTheme();
+    const isSmallScreen = useMediaQuery(theme.breakpoints.down('sm'));
+
+    const smallScreenAlign = {
+        [`& .${timelineItemClasses.root}:before`]: {
+            flex: 0,
+            padding: 0,
+        },
+    }
+
+    const regularScreenAlign = {
+        [`& .${timelineOppositeContentClasses.root}`]: {
+            flex: 0.2,
+        },
+    }
+
+    const align = isSmallScreen ? smallScreenAlign : regularScreenAlign;
+
 
     return (
-        <Timeline position="alternate">
+        <Timeline
+            sx={{ ...align }}
+        >
             {jobs.map((job, index) => (
-                <Job key={index} job={job} />
+                isSmallScreen ? <JobMobileDevice key={index} job={job} /> : <JobRegular key={index} job={job} />
             ))}
         </Timeline>
     );
@@ -45,16 +72,62 @@ const ICONS = {
     'finance': AccountBalanceIcon,
     'golf': GolfCourseIcon,
     'default': WorkIcon
-  };
+};
 
-function Job({ job }) {
+
+function JobMobileDevice({ job }) {
+    const Icon = ICONS[job.icon];
+    const boxStyles = { width: '120%' }
+
+    return (
+        <TimelineItem>
+            <TimelineSeparator>
+                <TimelineConnector style={{ backgroundColor: 'black' }} />
+                <TimelineDot style={{ backgroundColor: 'purple' }}>
+                    {Icon && <Icon style={{ backgroundColor: 'purple' }} />}
+                </TimelineDot>
+                <TimelineConnector style={{ backgroundColor: 'black' }} />
+            </TimelineSeparator>
+            <TimelineContent>
+                <Typography variant="body2" color="text.secondary">
+                    <DateShort dateString={job.startDate} />
+                </Typography>
+                <Box sx={{ paddingBottom: 2 }}>
+                    <Typography variant="h5" component="span">
+                        {job.title}
+                    </Typography>
+                    <Typography variant='body2'>{job.company}</Typography>
+                    <Typography variant='caption'>{job.location}</Typography>
+                </Box>
+                <Box>
+                    <AccordionSection
+                        title={"Responsibilities"}
+                        listItem={job.responsibilities}
+                        boxStyles={boxStyles}
+                    />
+                    <ThoughtSection
+                        title="Thoughts"
+                        content={job.thoughts}
+                        boxStyles={boxStyles}
+                    />
+                    <AccordionSection
+                        title={"Skills"}
+                        listItem={job.skills}
+                        boxStyles={boxStyles}
+                    />
+                </Box>
+            </TimelineContent>
+        </TimelineItem >
+    );
+}
+
+function JobRegular({ job }) {
     const Icon = ICONS[job.icon];
     const boxStyles = { width: '80%' }
 
     return (
-        <TimelineItem>
+        <TimelineItem  >
             <TimelineOppositeContent
-                sx={{ m: 'auto 0' }}
                 align="right"
                 variant="body2"
                 color="text.secondary"
@@ -62,18 +135,87 @@ function Job({ job }) {
                 <DateShort dateString={job.startDate} />
             </TimelineOppositeContent>
             <TimelineSeparator>
-                
+
                 <TimelineConnector style={{ backgroundColor: 'black' }} />
                 <TimelineDot style={{ backgroundColor: 'purple' }}>
-                {Icon && <Icon style={{ backgroundColor: 'purple' }}  />}
+                    {Icon && <Icon style={{ backgroundColor: 'purple' }} />}
                 </TimelineDot>
                 <TimelineConnector style={{ backgroundColor: 'black' }} />
-            
-            
+
+
             </TimelineSeparator>
-            <TimelineContent sx={{ py: '12px', px: 2 }}>
-                
-                <Box sx={{ paddingBottom: 1, paddingLeft: 1 }}>
+            <TimelineContent>
+
+                <Box sx={{ paddingBottom: 1 }}>
+
+                    <Typography variant="h5" component="span">
+                        {job.title}
+                    </Typography>
+                    <Typography variant='body2'>{job.company}</Typography>
+                    <Typography variant='caption'>{job.location}</Typography>
+
+
+                </Box>
+
+                <Box>
+                    <AccordionSection
+                        title={"Responsibilities"}
+                        listItem={job.responsibilities}
+                        boxStyles={boxStyles}
+                    />
+
+
+                    <ThoughtSection
+                        title="Thoughts"
+                        content={job.thoughts}
+                        boxStyles={boxStyles}
+                    />
+
+
+                    <AccordionSection
+                        title={"Skills"}
+                        listItem={job.skills}
+                        boxStyles={boxStyles}
+                    />
+
+                </Box>
+
+
+
+            </TimelineContent>
+        </TimelineItem>
+    );
+}
+
+
+
+
+function Job({ job }) {
+    const Icon = ICONS[job.icon];
+    const boxStyles = { width: '100%' }
+
+    return (
+        <TimelineItem  >
+            <TimelineOppositeContent
+                align="right"
+                variant="body2"
+                color="text.secondary"
+            >
+                <DateShort dateString={job.startDate} />
+            </TimelineOppositeContent>
+            <TimelineSeparator>
+
+                <TimelineConnector style={{ backgroundColor: 'black' }} />
+                <TimelineDot style={{ backgroundColor: 'purple' }}>
+                    {Icon && <Icon style={{ backgroundColor: 'purple' }} />}
+                </TimelineDot>
+                <TimelineConnector style={{ backgroundColor: 'black' }} />
+
+
+            </TimelineSeparator>
+            <TimelineContent>
+
+                <Box sx={{ paddingBottom: 1 }}>
 
                     <Typography variant="h5" component="span">
                         {job.title}
@@ -133,7 +275,6 @@ function ThoughtSection({ title, content, boxStyles }) {
         </Accordion>
     );
 }
-
 
 function AccordionSection({ title, listItem, boxStyles }) {
     return (
