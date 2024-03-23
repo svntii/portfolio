@@ -93,7 +93,7 @@ function JobMobileDevice({ job }) {
                     <DateShort dateString={job.startDate} />
                 </Typography>
                 <Box sx={{ paddingBottom: 2 }}>
-                    <Typography variant="h5" component="span">
+                    <Typography variant="h7" component="span">
                         {job.title}
                     </Typography>
                     <Typography variant='body2'>{job.company}</Typography>
