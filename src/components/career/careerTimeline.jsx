@@ -93,7 +93,7 @@ function JobMobileDevice({ job }) {
                     <DateShort dateString={job.startDate} />
                 </Typography>
                 <Box sx={{ paddingBottom: 2 }}>
-                    <Typography variant="h5" component="span">
+                    <Typography variant="h7" component="span">
                         {job.title}
                     </Typography>
                     <Typography variant='body2'>{job.company}</Typography>
@@ -148,7 +148,7 @@ function JobRegular({ job }) {
 
                 <Box sx={{ paddingBottom: 1 }}>
 
-                    <Typography variant="h5" component="span">
+                    <Typography variant="h6" component="span">
                         {job.title}
                     </Typography>
                     <Typography variant='body2'>{job.company}</Typography>
@@ -187,74 +187,6 @@ function JobRegular({ job }) {
     );
 }
 
-
-
-
-function Job({ job }) {
-    const Icon = ICONS[job.icon];
-    const boxStyles = { width: '100%' }
-
-    return (
-        <TimelineItem  >
-            <TimelineOppositeContent
-                align="right"
-                variant="body2"
-                color="text.secondary"
-            >
-                <DateShort dateString={job.startDate} />
-            </TimelineOppositeContent>
-            <TimelineSeparator>
-
-                <TimelineConnector style={{ backgroundColor: 'black' }} />
-                <TimelineDot style={{ backgroundColor: 'purple' }}>
-                    {Icon && <Icon style={{ backgroundColor: 'purple' }} />}
-                </TimelineDot>
-                <TimelineConnector style={{ backgroundColor: 'black' }} />
-
-
-            </TimelineSeparator>
-            <TimelineContent>
-
-                <Box sx={{ paddingBottom: 1 }}>
-
-                    <Typography variant="h5" component="span">
-                        {job.title}
-                    </Typography>
-                    <Typography variant='body2'>{job.company}</Typography>
-                    <Typography variant='caption'>{job.location}</Typography>
-
-
-                </Box>
-
-                <Box>
-                    <AccordionSection
-                        title={"Responsibilities"}
-                        listItem={job.responsibilities}
-                        boxStyles={boxStyles}
-                    />
-
-
-                    <ThoughtSection
-                        title="Thoughts"
-                        content={job.thoughts}
-                        boxStyles={boxStyles}
-                    />
-
-
-                    <AccordionSection
-                        title={"Skills"}
-                        listItem={job.skills}
-                        boxStyles={boxStyles}
-                    />
-
-                </Box>
-
-
-
-            </TimelineContent>
-        </TimelineItem>
-    );
-}
 
 
 function ThoughtSection({ title, content, boxStyles }) {
