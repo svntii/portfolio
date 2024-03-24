@@ -5,6 +5,7 @@ import BottomNavigationAction from '@mui/material/BottomNavigationAction';
 import HomeIcon from '@mui/icons-material/Home';
 import RssFeedIcon from '@mui/icons-material/RssFeed';
 import WorkHistoryIcon from '@mui/icons-material/WorkHistory';
+import CodeIcon from '@mui/icons-material/Code';
 import Link from 'next/link';
 import GetAppIcon from '@mui/icons-material/GetApp';
 import { useRouter } from 'next/router';
@@ -18,17 +19,21 @@ export function BottomNav() {
     }, [router.pathname]);
 
     function getInitialValue(path) {
-        if (path === '/blog' || path.startsWith('/blog/')) {
-            return 0;
-        } else if (path === '/') {
-            return 1;
-        }
-        else if (path === '/career') {
-            return 2;
-        } else if (path === '/SJRODRIGUEZ_ATS.pdf') {
-            return 3;
-        } else {
-            return 0;
+        switch (true) {
+            case path === '/project':
+            case path.startsWith('/project/'):
+                return 0;
+            case path === '/blog':
+            case path.startsWith('/blog/'):
+                return 1;
+            case path === '/':
+                return 2;
+            case path === '/career':
+                return 3;
+            case path === '/SJRODRIGUEZ_ATS.pdf':
+                return 4;
+            default:
+                return 2;
         }
     }
 
@@ -41,6 +46,12 @@ export function BottomNav() {
                 }}
 
             >
+                <BottomNavigationAction
+                    icon={<CodeIcon style={{ fontSize: 40 }} />}
+                    LinkComponent={Link}
+                    href='/project'
+                />
+
                 <BottomNavigationAction
                     icon={<RssFeedIcon style={{ fontSize: 40 }} />}
                     LinkComponent={Link}
