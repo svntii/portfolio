@@ -3,13 +3,12 @@ title: 'Multi-class Segmentation Model'
 date: '2024-01-15'
 end: '2024-05-05'
 ---
-TODO
-
+Research Currently In Progress
 
 ---
 ## Responsibilities
 
-- TODO
+- :)
 
 ## Skills
 ![Python][Python]
