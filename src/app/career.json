@@ -77,7 +77,7 @@
                 "Figma",
                 "IBM Cloud"
             ],
-            "thoughts": ""
+            "thoughts": "Gained a lot of great personal value from this internship. It was the first time living alone truly. I was so far from home, and I had an actual city to explore. My position as a sales engineer made me think about complimenting my engineering mindset with a sales mindset. You need to sell yourself, and your abilities to others. Your branch is very important and it is imperative to be able to effectively communicate that value to others clients. Shout out Paul for showing me trolling fishing."
         },
         {
             "title": "Financial Analyst Intern",
@@ -106,7 +106,10 @@
             "location": "New York City, NY",
             "icon": "finance",
             "responsibilities": [
-                "#TODO"
+                "Interned 20-25 hrs/week",
+                "Under the guidance of elite financial advisors",
+                "Studied mathematics of finance, model functionality, programming (VBA/Javascript), and business etiquette",
+                "Created excel game to highlight learned excel skills"
             ],
             "skills": [
                 "Python",
@@ -122,12 +125,17 @@
             "endDate": "2021-08-05",
             "location": "Mount Vernon, NY",
             "icon": "default",
-
             "responsibilities": [
-                "#TODO"
+                "Assembled bikes according to company specifications and quality standards",
+                "Inspected final products to ensure they met Peleton's high-quality standards",
+                "Maintained a clean and safe work environment",
+                "Collaborated with warehouse team to manage and organize inventory"
             ],
             "skills": [
-                "TODO"
+                "Assembly",
+                "Quality control",
+                "Safety protocols",
+                "Teamwork"
             ],
             "thoughts": ""
         },
@@ -139,10 +147,15 @@
             "location": "Westchester, NY",
             "icon": "golf",
             "responsibilities": [
-                "#TODO"
+                "Assisted golf players by carrying equipment, maintaining golf balls, and managing the flagstick",
+                "Voluntarily left the position to seek opportunities more aligned with career goals",
+                "Completed two four-hour 'loops' per day, demonstrating strong work ethic and stamina"
             ],
             "skills": [
-                "TODO"
+                "Customer service",
+                "Physical stamina",
+                "Attention to detail",
+                "Time management"
             ],
             "thoughts": ""
         },
@@ -154,16 +167,23 @@
             "location": "Bronx, NY",
             "icon": "default",
             "responsibilities": [
-                "#TODO"
+                "Managed customer transactions and resolved customer issues",
+                "Maintained store organization by restocking shelves and keeping the workstation clean",
+                "Handled cash transactions and operated scanning and register equipment",
+                "Concluded role following the expiration of the seasonal contract"
             ],
             "skills": [
-                "TODO"
+                "Customer service",
+                "Cash handling",
+                "Organization",
+                "Point of sale systems"
             ],
             "thoughts": ""
         }
     ],
     "projects": [
         {
+            "id": "Multi-class-Segmentation-Model",
             "name": "Multi-class Segmentation Model",
             "startDate": "2023-01-15",
             "endDate": "2023-05-05",
@@ -180,6 +200,7 @@
             "thoughts": ""
         },
         {
+            "id": "bonsAI",
             "name": "bonsAI",
             "startDate": "2023-01-15",
             "endDate": "2023-05-05",
@@ -197,6 +218,7 @@
             "thoughts": ""
         },
         {
+            "id": "EyeTrack",
             "name": "EyeTrack",
             "startDate": "2023-01-15",
             "endDate": "2023-05-05",
@@ -215,6 +237,7 @@
             "thoughts": ""
         },
         {
+            "id": "B-Minor-Compiler",
             "name": "B-Minor Compiler",
             "startDate": "2023-01-15",
             "endDate": "2023-05-05",
@@ -233,6 +256,7 @@
             "thoughts": ""
         },
         {
+            "id": "Lambda-Calculus-Interpreter",
             "name": "Lambda Calculus Interpreter",
             "startDate": "2023-01-15",
             "endDate": "2023-05-05",
@@ -251,6 +275,7 @@
             "thoughts": ""
         },
         {
+            "id": "Student-Advisor-Matching",
             "name": "Happiest Matchmaking App",
             "startDate": "2023-01-15",
             "endDate": "2023-05-05",

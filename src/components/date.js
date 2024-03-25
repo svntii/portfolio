@@ -10,3 +10,7 @@ export function DateShort({ dateString }) {
   return <time dateTime={dateString}>{format(date, 'MMMM yyyy')}</time>;
 }
 
+export function DateShortString({ dateString }) {
+  const date = parseISO(dateString);
+  return format(date, 'MMMM yyyy');
+}

@@ -1,34 +1,38 @@
-import { getSortedPostsData } from '../../../lib/posts';
+import { getSortedProjectsData } from '../../../lib/projects';
 import Link from 'next/link';
 import { Box, Typography, List, ListItem, ListItemText } from '@mui/material';
+import {DateShortString} from "../../components/date";
 
 
 export async function getStaticProps() {
-    const allPostsData = getSortedPostsData();
+    const allProjectsData = getSortedProjectsData();
     return {
         props: {
-            allPostsData,
+            allProjectsData,
         },
     };
 }
 
-export default function AllBlogs({ allPostsData }) {
+
+export default function AllProjects({ allProjectsData }) {
+
+
     return (
         <Box sx={{ padding: "3em", background: "background.paper" }}>
             <Typography variant="h4" component="div" sx={{ flexGrow: 1, marginBottom: 2 }}>
-                All Posts 📑
+                My Projects 🧑‍💻
             </Typography>
             <div>
                 <List dense={true}>
-                    {allPostsData.map(({ id, date, title }) => (
+                    {allProjectsData.map(({ id, date, end, title }) => (
                         <ListItem key={id} disablePadding>
                             <ListItemText
                                 primary={
-                                    <Link href={`/blog/${id}`} passHref>
+                                    <Link href={`/project/${id}`} passHref>
                                         <Typography variant="h6" component="a">{title}</Typography>
                                     </Link>
                                 }
-                                secondary={date}
+                                secondary={`${DateShortString({ dateString: date })} to ${DateShortString({ dateString: end })}`}
                                 sx={{ textAlign: 'left' }}
                             />
                         </ListItem>

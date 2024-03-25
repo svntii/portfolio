@@ -26,7 +26,7 @@ export default function Home({ allPostsData }) {
     return (
         <main>
             <Head>
-                <title>{"Home"}</title>
+                <title>{"svntiiago.com"}</title>
                 <link rel="icon" href="/app/favicon.ico" sizes="any" />
             </Head>
 
