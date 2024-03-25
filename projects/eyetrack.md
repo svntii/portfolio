@@ -4,7 +4,7 @@ date: '2023-08-15'
 end: '2023-12-05'
 ---
 
-This project was completed as part of the course CSE 40535: Computer Vision at the University of Notre Dame. The project was intended to implement a computer vision model that is able to detect, track, and accurately determine where a subject is looking at via a camera feed. Then translate the data from the model to mouse movement, and incorporated gesture recognition - for clicking, gesturing, etc. Group members included [Santiago Rodriguez](https:://github.com/svntii), Jose Benitez, and Gustavo Aniceto.
+This project was completed as part of the course CSE 40535: Computer Vision at the University of Notre Dame. The project was intended to implement a computer vision model that is able to detect, track, and accurately determine where a subject is looking at via a camera feed. Then translate the data from the model to mouse movement, and incorporated gesture recognition - for clicking, gesturing, etc. Group members included [Santiago Rodriguez](https://github.com/svntii), Jose Benitez, and Gustavo Aniceto.
 
 ---
 
