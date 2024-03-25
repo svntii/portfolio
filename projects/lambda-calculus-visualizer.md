@@ -1,7 +1,7 @@
 ---
 title: 'Lambda Calculus Interpreter'
-date: '2023-09-15'
-end: '2023-12-05'
+date: '2022-08-15'
+end: '2022-12-05'
 ---
 Created a Visualizer/Interpreter for a Lambda Calculus terms with their respective types.
 

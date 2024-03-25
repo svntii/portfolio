@@ -1,10 +1,11 @@
 ---
 title: 'B-Minor Compiler'
-date: '2023-08-15'
-end: '2023-12-05'
+date: '2022-08-15'
+end: '2022-12-05'
 ---
-A compiler for the B-Minor programming language
 
+This project was completed as part of the course CSE 40243: Compilers and Language Design at the University of Notre Dame. 
+The project was intended to implement this language spec defined [here](https://dthain.github.io/compilers-fa22/bminor.html) by [Dr. Douglas Thain](https://dthain.github.io/). The project was broken down into five steps, requiring the construction of a scanner, parser, printer, type checker, and code generator. The project was completed in C++ and used the Flex and Bison tools to generate the scanner and parser.
 
 ---
 

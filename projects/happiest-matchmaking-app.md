@@ -3,8 +3,7 @@ title: 'Happiest Matchmaking App'
 date: '2022-01-15'
 end: '2022-05-15'
 ---
-Developed, implemented, and tested the Gale-Shapley Algorithm to create matching making application for professors to match advisors with students.
-
+Developed, implemented, and tested the Gale-Shapley Algorithm to create matching making application for professors to match advisors with students. The application was developed in Python and used the Pandas and Numpy libraries to handle the data. The application was able to read in emails from students and advisors, parse the data, and then match the students with the advisors based on the preferences of both parties. The application was able to handle multiple students and advisors and was able to match them in a way that was both stable and optimal.
 
 ---
 
