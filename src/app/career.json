@@ -183,6 +183,7 @@
     ],
     "projects": [
         {
+            "id": "Multi-class-Segmentation-Model",
             "name": "Multi-class Segmentation Model",
             "startDate": "2023-01-15",
             "endDate": "2023-05-05",
@@ -199,6 +200,7 @@
             "thoughts": ""
         },
         {
+            "id": "bonsAI",
             "name": "bonsAI",
             "startDate": "2023-01-15",
             "endDate": "2023-05-05",
@@ -216,6 +218,7 @@
             "thoughts": ""
         },
         {
+            "id": "EyeTrack",
             "name": "EyeTrack",
             "startDate": "2023-01-15",
             "endDate": "2023-05-05",
@@ -234,6 +237,7 @@
             "thoughts": ""
         },
         {
+            "id": "B-Minor-Compiler",
             "name": "B-Minor Compiler",
             "startDate": "2023-01-15",
             "endDate": "2023-05-05",
@@ -252,6 +256,7 @@
             "thoughts": ""
         },
         {
+            "id": "Lambda-Calculus-Interpreter",
             "name": "Lambda Calculus Interpreter",
             "startDate": "2023-01-15",
             "endDate": "2023-05-05",
@@ -270,6 +275,7 @@
             "thoughts": ""
         },
         {
+            "id": "Student-Advisor-Matching",
             "name": "Happiest Matchmaking App",
             "startDate": "2023-01-15",
             "endDate": "2023-05-05",

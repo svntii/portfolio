@@ -11,11 +11,12 @@ export async function getStaticProps() {
         },
     };
 }
+
 export default function AllBlogs({ allPostsData }) {
     return (
         <Box sx={{ padding: "3em", background: "background.paper" }}>
             <Typography variant="h4" component="div" sx={{ flexGrow: 1, marginBottom: 2 }}>
-                All Posts
+                All Posts 📑
             </Typography>
             <div>
                 <List dense={true}>
@@ -24,11 +25,11 @@ export default function AllBlogs({ allPostsData }) {
                             <ListItemText
                                 primary={
                                     <Link href={`/blog/${id}`} passHref>
-                                        {title}
+                                        <Typography variant="h6" component="a">{title}</Typography>
                                     </Link>
                                 }
                                 secondary={date}
-                                sx={{ textAlign: 'left' }} // Add this line
+                                sx={{ textAlign: 'left' }}
                             />
                         </ListItem>
                     ))}

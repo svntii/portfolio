@@ -1,17 +1,14 @@
-import { getAllPostIds, getPostData } from "../../../lib/posts";
-import { BlogLayout } from "../../components/blog/blogLayout";
-import Date from '../../components/date';
+import { getAllProjectIds, getProjectData } from "../../../lib/projects";
+import { Box, Typography, Grid } from '@mui/material';
 import Head from 'next/head';
-import Typography from '@mui/material/Typography';
-import Box from '@mui/material/Box';
+import Date, { DateShort } from "../../components/date";
 import BackButton from "../../components/home/backButton";
-import Grid from '@mui/material/Grid';
 
-export default function Post({ postData }) {
+export default function Project({ projectData }) {
     return (
-        <BlogLayout>
+        <Box>
             <Head>
-                <title>{postData.title}</title>
+                <title>{projectData.title}</title>
             </Head>
             <Box sx={{ padding: "3em", background: "background.paper" }}>
                 <Grid container spacing={2}>
@@ -20,21 +17,21 @@ export default function Post({ postData }) {
                     </Grid>
                     <Grid item xs={11}>
                         <article>
-                            <Typography variant="h4" sx={{ marginBottom: '1em' }}>{postData.title}</Typography>
+                            <Typography variant="h4" sx={{ marginBottom: '1em' }}>{projectData.title}</Typography>
                             <Typography variant="subtitle1" sx={{ marginBottom: '1em', color: 'gray' }}>
-                                <Date dateString={postData.date} />
+                                <DateShort dateString={projectData.date} /> to <DateShort dateString={projectData.end} />
                             </Typography>
-                            <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
+                            <div dangerouslySetInnerHTML={{ __html: projectData.contentHtml }} />
                         </article>
                     </Grid>
                 </Grid>
             </Box>
-        </BlogLayout>
+        </Box>
     );
 }
 
 export async function getStaticPaths() {
-    const paths = getAllPostIds();
+    const paths = getAllProjectIds();
     return {
         paths,
         fallback: false,
@@ -42,10 +39,10 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps({ params }) {
-    const postData = await getPostData(params.id);
+    const projectData = await getProjectData(params.id);
     return {
         props: {
-            postData,
+            projectData,
         },
     };
 }
