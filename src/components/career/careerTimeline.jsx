@@ -146,38 +146,39 @@ function JobRegular({ job }) {
             </TimelineSeparator>
             <TimelineContent>
 
-                <Box sx={{ paddingBottom: 1 }}>
-
-                    <Typography variant="h6" component="span">
-                        {job.title}
-                    </Typography>
-                    <Typography variant='body2'>{job.company}</Typography>
-                    <Typography variant='caption'>{job.location}</Typography>
-
-
-                </Box>
-
-                <Box>
-                    <AccordionSection
-                        title={"Responsibilities"}
-                        listItem={job.responsibilities}
-                        boxStyles={boxStyles}
-                    />
+                <Box sx={{ paddingBottom: 1, mb: 5 }}> {/* Add margin-bottom */}
+                    <Box>
+                        <Typography variant="h6" component="span">
+                            {job.title}
+                        </Typography>
+                        <Typography variant='body2'>{job.company}</Typography>
+                        <Typography variant='caption'>{job.location}</Typography>
 
 
-                    <ThoughtSection
-                        title="Thoughts"
-                        content={job.thoughts}
-                        boxStyles={boxStyles}
-                    />
+                    </Box>
+
+                    <Box>
+                        <AccordionSection
+                            title={"Responsibilities"}
+                            listItem={job.responsibilities}
+                            boxStyles={boxStyles}
+                        />
 
 
-                    <AccordionSection
-                        title={"Skills"}
-                        listItem={job.skills}
-                        boxStyles={boxStyles}
-                    />
+                        <ThoughtSection
+                            title="Thoughts"
+                            content={job.thoughts}
+                            boxStyles={boxStyles}
+                        />
 
+
+                        <AccordionSection
+                            title={"Skills"}
+                            listItem={job.skills}
+                            boxStyles={boxStyles}
+                        />
+
+                    </Box>
                 </Box>
 
 
