@@ -1,5 +1,5 @@
 ---
-title: 'Gem: Being Right vs Being Right'
+title: 'Gem 💎: Being Right vs Being Right'
 date: '2024-03-28'
 ---
 
