@@ -35,4 +35,4 @@ Imagine AI to be a nice powerful car. It has all the amenities, powerful, fast, 
 I find both these points to be extremely powerful because it puts into context the importance of thinking in the work you do. Profits are at the forefront of most decisions made by companies, and we need to start humanizing ourselves, our society, and our world. 
 
 
--svntii
+svntii
