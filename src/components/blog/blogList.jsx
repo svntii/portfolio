@@ -11,26 +11,27 @@ export function BlogList({ allPostsData, expandedBox, setExpandedBox }) {
     const maxHeight = 50;
     const isExpanded = expandedBox === 'blog';
     const setExpanded = () => setExpandedBox(isExpanded ? null : 'blog');
-    
+
     return (
         <Box sx={{
-            ...profileBoxStyles(maxWidth, isExpanded ? 'none' : maxHeight), width: '100%'}} 
+            ...profileBoxStyles(maxWidth, isExpanded ? 'none' : maxHeight), width: '100%'
+        }}
             onClick={setExpanded}>
 
             <Typography variant="body1" sx={{ fontWeight: '600' }}>Blog 🧑‍💻</Typography>
             <ul style={{ listStyle: 'none', padding: 0 }}>
                 {allPostsData.slice(0, 5).map(({ id, date, title }) => (
                     <li key={id} style={{ marginBottom: '0.5em' }}>
-                        <Typography variant="h6" sx={{ fontStyle: "italic" }}>{title}</Typography>
-                        <Link href={`/blog/${id}`}>{id}</Link>
-                        <br />
+                        <Typography variant="h6" sx={{ fontStyle: "italic" }}>
+                            <Link href={`/blog/${id}`}>{title}</Link>
+                        </Typography>
                         {date}
                     </li>
                 ))}
             </ul>
 
             <Link href={"/blog"}>
-                    <Typography variant="caption" sx={{ }}>More...</Typography>
+                <Typography variant="caption" sx={{}}>More...</Typography>
             </Link>
         </Box>
     );
