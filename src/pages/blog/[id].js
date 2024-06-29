@@ -7,8 +7,11 @@ import Box from "@mui/material/Box";
 import BackButton from "../../components/home/backButton";
 import Grid from "@mui/material/Grid";
 import { motion } from "framer-motion";
+import ReactMarkdown from "react-markdown";
+import Image from "next/image";
 
 export default function Post({ postData }) {
+
   return (
     <motion.div
       initial={{ opacity: 0 }}
@@ -35,9 +38,14 @@ export default function Post({ postData }) {
                 >
                   <Date dateString={postData.date} />
                 </Typography>
-                <div
-                  dangerouslySetInnerHTML={{ __html: postData.contentHtml }}
-                />
+
+                <ReactMarkdown
+                  components={{
+                    img: CustomImage,
+                  }}
+                >
+                  {postData.markdownContent}
+                </ReactMarkdown>
               </article>
             </Grid>
           </Grid>
@@ -46,6 +54,22 @@ export default function Post({ postData }) {
     </motion.div>
   );
 }
+
+const CustomImage = ({ src, alt }) => {
+  return (
+    <div style={{ textAlign: "center" }}>
+      <Image
+        src={src}
+        alt={alt}
+        layout="responsive"
+        width={700}
+        height={475}
+        style={{ maxWidth: "100%", height: "auto" }}
+      />
+    </div>
+  );
+};
+
 
 export async function getStaticPaths() {
   const paths = getAllPostIds();
@@ -57,6 +81,7 @@ export async function getStaticPaths() {
 
 export async function getStaticProps({ params }) {
   const postData = await getPostData(params.id);
+
   return {
     props: {
       postData,
