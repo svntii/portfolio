@@ -10,6 +10,7 @@ import { getSortedPostsData } from "../../lib/posts";
 import { homeBoxStyle } from "@/app/styles";
 import Head from "next/head";
 import { motion } from "framer-motion";
+import ParticlesComponent from "@/components/particles";
 
 export async function getStaticProps() {
   const allPostsData = getSortedPostsData();
@@ -29,6 +30,7 @@ export default function Home({ allPostsData }) {
       animate={{ opacity: 1 }}
       transition={{ duration: 0.5 }}
     >
+      <ParticlesComponent />
       <Head>
         <title>{"svntiiago.com"}</title>
         <link rel="icon" href="/app/favicon.ico" sizes="any" />
