@@ -47,6 +47,7 @@ export default function Home({ allPostsData }) {
             config.profile.socials.github,
             config.profile.socials.linkedin,
             config.profile.socials.twitter,
+            config.profile.socials.email
           ]}
           expandedBox={expandedBox}
           setExpandedBox={setExpandedBox}

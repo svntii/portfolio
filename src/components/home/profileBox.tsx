@@ -72,7 +72,7 @@ function InterestsBox({ interests, isExpanded, setExpanded }: { interests: strin
     const maxHeight = 50;
     return (
         <Box sx={{ ...profileBoxStyles(maxWidth, isExpanded ? 'none' : maxHeight) }} onClick={setExpanded}>
-            <Typography variant="body1" sx={{ color: 'text.primary', fontWeight: '600', paddingBottom: 1 }}>Interests 🧠</Typography>
+            <Typography variant="body1" sx={{ color: 'text.primary', fontWeight: '600', paddingBottom: 1.5 }}>Interests 🧠</Typography>
             {interests.map((interest, index) => (
                 <Typography key={index} variant="body2" sx={{ color: 'text.primary', '&:hover': { backgroundColor: 'blueviolet', color: 'white' } }}>
                     {interest}
@@ -88,7 +88,7 @@ function SocialsBox({ socials, isExpanded, setExpanded }: { socials: string[], i
     const maxHeight = 50;
     return (
         <Box sx={{ ...profileBoxStyles(maxWidth, isExpanded ? 'none' : maxHeight) }} onClick={setExpanded}>
-            <Typography variant="body1" sx={{ color: 'text.primary', fontWeight: '600', paddingBottom: 1 }}>Socials 📱</Typography>
+            <Typography variant="body1" sx={{ color: 'text.primary', fontWeight: '600', paddingBottom: 1.5 }}>Socials 📱</Typography>
             {socials.map((social, index) => (
                 <a key={index} href={"https://" + social} target="_blank" rel="noopener noreferrer">
                     <Typography variant="body2" sx={{ color: 'text.primary', '&:hover': { backgroundColor: 'blueviolet', color: 'white' } }}>
