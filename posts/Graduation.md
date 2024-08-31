@@ -21,7 +21,7 @@ After the Grand Canyon, we decided to head back home. It was a great trip, and I
 
 ![Galaxy outside Moab](/grad/GalaxyOniPhone14.jpeg)
 
-I want to own a remote, low light pollution ranch one day to just camp and stare into the night sky. The darkness is really healing. I love Utah! ❤️ After Utah, we drove to Kansas City because I needed a bed desperately. We briefly stopped in Colorado, had some tea (took two amazing dumps) and made it on our way. Before heading back to NYC, we stopped in Nashville to visit my mentor. Nash was great and very spicy. He and his wife were very welcoming. We had a great time and I'm grateful for the advice they both gave me.
+I want to own a remote, low light pollution ranch one day to just camp and stare into the night sky. The darkness is really healing. I love Utah! ❤️ After Utah, we drove to Kansas City because I needed a bed desperately. We briefly stopped in Colorado, had some tea (took two amazing dumps) and made it on our way. Before heading back to NYC, we stopped in Nashville to visit my mentor. Nash was great and very spicy. My mentor and his wife were very welcoming. We had a great time and I'm grateful for the advice they both gave me.
 
 ![Nashville](/grad/SantAndNash.jpeg)
 
@@ -36,3 +36,6 @@ Lessons learned:
 - Mindset is key 🔑
 - Take the trip and smell the roses 🌹
 - The stars are the brightest in the darkest of times.
+
+
+svntii
