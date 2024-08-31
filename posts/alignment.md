@@ -3,30 +3,26 @@ title: 'alignment rant'
 date: '2024-08-06'
 ---
 ## Symptoms + importance
-Be misaligned manifests itself through various forms and levels of extremity. A common form is burnout with a sprinkle of existential dread with your life. Another is having a temper as fragile as silence. I can go on and on, about how being misaligned shows itself in your life but there is no intrinsic value of highlighting your distress. 
+Misalignment can manifest in various forms and degrees of severity. A common example is burnout, often accompanied by existential dread about your life. Another example is having a temper as fragile as silence. I could go on and on about how misalignment shows up in your life, but highlighting your distress has no intrinsic value.
 
-Being aligned is a muscle, it requires a framework that you can follow when things are muddy, and when you want to go on autopilot. 
-I hope I plant a seed of awareness and that you can start the journey of alignment.
+Alignment is like a muscle; it requires a framework you can follow when things get murky or when you feel like going on autopilot. I hope to plant a seed of awareness so that you can begin your journey toward alignment.
 
 ## Causes
-Alignment, as simply as I can condense it, is “arrangement in appropriate relative positions” (thanks Oxford Dictionary). But what does that really mean. It is state of being where every process in your system is operating as efficiently as possible. There is no friction, no true “loss of energy” - f newton’s law (jk). 
+Alignment, as simply defined, is the "arrangement in appropriate relative positions" (thanks, Oxford Dictionary). But what does that really mean? It's a state of being where every process in your system operates as efficiently as possible. There is no friction, no true "loss of energy"— f Newton’s law (jk)
 
-Alignment starts with intention, then goes to execution, and finally ends with completion/discovery. (See image below)
-
+Alignment starts with intention, moves on to execution, and finally ends with completion or discovery (see image below).
 ## How to address it?
 
-1. **Intention** - If your desire is the foundational piece to the house. If you have no fire, then everything crumbles. A common thing is “i don’t know what I want to do”. I promise you everyone does. You just haven’t been able to put it to words. What do I mean, If I ask you what do you want to eat and you respond “idk”. I give you friend crickets, are you going to eat it? (For the purpose of the example, the answer is no) Inverse the negatives and abstract hires. Hone in on that guy feeling that we are trained to ignore. That is vital tool.
+1. **Intention** - Your desire is the foundation of everything. Without a burning passion, everything crumbles. A common sentiment is, "I don't know what I want to do." But I promise you, everyone does—you just haven't put it into words yet. For example, if I ask you what you want to eat and you say "I don't know," and I offer you fried crickets, are you going to eat them? (For the sake of the example, the answer is no.) Flip the negatives and abstract higher-level desires. Trust that gut feeling we’re trained to ignore. It's a vital tool.
 
-2. **Execution** - We gotta do things, we have to do. Thats why’s the intention is so important. That intermediate step can last as long as brushing your teeth, to years spent researching the cure for cancer. Execution is where a lot of energy is lost and we experience burnout. It is not just self but with your environment. Messy coworkers, compromised living situations, these all attribute to your execution. Create list of essential tasks to accomplish in order to stay on track. This will be your lifeline in rough times
+2. **Execution** - We have to take action, which is why intention is so important. This step can range from something as simple as brushing your teeth to years spent researching a cure for cancer. Execution is where much energy is lost, and burnout occurs. It’s not just about your effort but also your environment. Messy coworkers, compromised living situations—these all affect your execution. Create a list of essential tasks to stay on track. This will be your lifeline in tough times.
 
-3. **Completion/Discovery** - The final step is where it matters. All quitters stop before the finish line. How you complete your goals and objectives is just as important as how you dreamt them. If you poor your literal life energy into a project all for it to die. You will feel empty. And let’s say you complete your task. What’s next? Always keep your head up for what is on the horizon. The cycle continues where you want to find the next step. And then you are you are back at step 1.
+3. **Completion/Discovery** - The final step is critical. Many quitters stop just before the finish line. How you complete your goals and objectives is as important as how you dreamt them up. If you pour your life energy into a project only for it to fail, you'll feel empty. And if you do complete your task—what's next? Always keep an eye out for the next step, and then you'll be back at step one.
 
 ## Stay aligned 
+Mind, body, spirit—these are common metaphors people use to express the pillars of alignment. Our time on this planet is fleeting, so don't waste it by over-allocating to one area. Find or do things that help you decompress.
 
-Mind, body, spirit. A common metaphor people use to express alignment pillars. Seriously, our time on this planet is ephemeral*. Don’t waste it over allocating to one category. Find/do things that make you decompress. 
-
-Overall alignment is a vital philosophical principle to consider in one’s life. It plagues many of my friends, peers, and family. Life is beautiful, and you don’t want to let the system to control you. Tell the system what to do.
-
+Overall, alignment is a vital philosophical principle to consider in life. It plagues many of my friends, peers, and family. Life is beautiful, and you don't want to let the system control you. Instead, tell the system what to do.
 
 ## Symptoms of Misalignment Cont. 
 
