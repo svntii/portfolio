@@ -63,6 +63,24 @@ const photosData = [
     model: "",
     alt: "Lost Path",
   },
+  {
+    project: "misc",
+    date: "2024-08-20",
+    src: "/captures/misc/20240820_highline.jpeg",
+    camera: "Sony a6000 50mm",
+    shotby: "@svntiiago",
+    model: "",
+    alt: "8th (I think) Ave near Red Tree on Highline",
+  },
+  {
+    project: "misc",
+    date: "2024-08-21",
+    src: "/captures/misc/20240821_AAOverMets.jpeg",
+    camera: "Sony a6000 50mm",
+    shotby: "@svntiiago",
+    model: "",
+    alt: "American Airlines over Citi Field",
+  }
 ];
 
 export default function AllCaptures() {
