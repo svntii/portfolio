@@ -100,7 +100,7 @@ function JobMobileDevice({ job }) {
                     <Typography variant='caption'>{job.location}</Typography>
                 </Box>
                 <Box>
-                    <AccordionSection
+                    <JobDetails
                         title={"Responsibilities"}
                         listItem={job.responsibilities}
                         boxStyles={boxStyles}
@@ -146,7 +146,7 @@ function JobRegular({ job }) {
             </TimelineSeparator>
             <TimelineContent>
 
-                <Box sx={{ paddingBottom: 1, mb: 5 }}> {/* Add margin-bottom */}
+                <Box sx={{ paddingBottom: 1, mb: 5 }}>
                     <Box>
                         <Typography variant="h6" component="span">
                             {job.title}
@@ -156,32 +156,24 @@ function JobRegular({ job }) {
 
 
                     </Box>
-
-                    <Box>
-                        <AccordionSection
+                    <Box>   
+                        <JobDetails
                             title={"Responsibilities"}
                             listItem={job.responsibilities}
                             boxStyles={boxStyles}
                         />
-
-
                         <ThoughtSection
                             title="Thoughts"
                             content={job.thoughts}
                             boxStyles={boxStyles}
                         />
-
-
                         <AccordionSection
                             title={"Skills"}
                             listItem={job.skills}
                             boxStyles={boxStyles}
                         />
-
                     </Box>
                 </Box>
-
-
 
             </TimelineContent>
         </TimelineItem>
@@ -201,9 +193,36 @@ function ThoughtSection({ title, content, boxStyles }) {
                 <Typography>{title}</Typography>
             </AccordionSummary>
             <AccordionDetails>
-                <Typography align="left">
-                    {content}
-                </Typography>
+                <ul>
+                    {content.map((item, index) => (
+                        <li key={index}>
+                            <Typography align="left" sx={{ paddingBottom: 1 }}>{item}</Typography>
+                        </li>
+                    ))}
+                </ul>
+            </AccordionDetails>
+        </Accordion>
+    );
+}
+
+function JobDetails({ title, listItem, boxStyles }) {
+    return (
+        <Accordion sx={{ ...boxStyles }}>
+            <AccordionSummary
+                expandIcon={<ExpandMoreIcon />}
+                aria-controls="panel1a-content"
+                id="panel1a-header"
+            >
+                <Typography>{title}</Typography>
+            </AccordionSummary>
+            <AccordionDetails>
+                <ul>
+                    {listItem.map((item, index) => (
+                        <li key={index}>
+                            <Typography align="left" sx={{ paddingBottom: 1 }}>{item}</Typography>
+                        </li>
+                    ))}
+                </ul>
             </AccordionDetails>
         </Accordion>
     );

@@ -2,7 +2,7 @@
   "profile": {
     "name": "Santiago Rodriguez",
     "title": "Jack of all trades, master of some 🃏",
-    "description": "I was born and raised in the Bronx and am one of seven siblings. I am currently a senior studying Computer Science at the University of Notre Dame. In addition to pursuing my degree in Computer Science, I am working towards a minor in Innovation and Entrepreneurship. I have a deep passion for developing technology and gaining insights into human cognition to enhance society's interactions with the world. More specifically, my interests lie in XR (Extended Reality), Blockchain, and Machine Learning/Artificial Intelligence. I am eager to connect and share ideas with others.",
+    "description": "Santiago Rodriguez is a software engineer with a Bachelor of Science in Computer Science from the University of Notre Dame du Lac. Raised in the Bronx, he excelled academically, earning the Hipp-Beeler Scholarship and Faculty Choice Senior awards. Currently, Santiago is part of Apple’s Evolve Rotational Program in New York City, where he develops innovative iOS features for the Apple Sports App, focusing on performance, accessibility, and new functionalities. Proficient in Swift, Python, Java, C, and TypeScript, Santiago has experience with Xcode, SwiftUI, LangChain, and React. His previous roles include Software Engineer Intern at Apple in San Diego and Software Developer at BILL in San Jose, where he worked on API development and micro-services. Santiago has led research projects, including a multi-class segmentation project using PyTorch and HuggingFace, and developed EyeTrack, a real-time computer vision system. He is a founding member of Colorstack, a tech non-profit, and is passionate about XR, Blockchain, and AI. In his free time, Santiago enjoys hiking, working out, listening to music, and learning to DJ and produce music. He is eager to connect and share ideas with others",
     "email": "svntiiago@gmail.com",
     "interests": [
       "machine learning",
@@ -16,7 +16,7 @@
       "github": "github.com/svntii",
       "linkedin": "linkedin.com/in/sjrodriguez-iii",
       "twitter": "x.com/strangesantiago",
-      "email":"svntiiago@gmail.com"
+      "email": "svntiiago@gmail.com"
     }
   }
 }

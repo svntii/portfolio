@@ -75,9 +75,10 @@ export function BottomNav() {
         />
         <BottomNavigationAction
           icon={<GetAppIcon style={{ fontSize: 40 }} />}
+          component="a"
           href="/SJRODRIGUEZ_ATS.pdf"
-          download="SJRODRIGUEZ_ATS.pdf"
           target="_blank"
+          rel="noopener noreferrer"
         />
       </BottomNavigation>
     </Box>
