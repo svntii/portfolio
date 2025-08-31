@@ -35,6 +35,9 @@
     "remark-html": "^16.0.1",
     "slick-carousel": "^1.8.1"
   },
+  "engines": {
+    "node": ">=22.0.0"
+  },
   "devDependencies": {
     "@types/node": "^20",
     "@types/react": "^18",
